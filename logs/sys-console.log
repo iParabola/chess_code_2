@@ -1,23 +1,23 @@
-2025-05-28 16:07:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2025-05-28 16:07:44 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_442 on WeiMacm.local with PID 7298 (/Users/w/Documents/chess_code/ruoyi/target/classes started by w in /Users/w/Documents/chess_code)
-2025-05-28 16:07:44 [main] INFO  com.ruoyi.RuoYiApplication - The following 1 profile is active: "dev"
-2025-05-28 16:07:46 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2025-05-28 16:07:46 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2025-05-28 16:07:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2025-05-28 16:07:46 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2025-05-28 16:07:46 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2025-05-28 16:07:46 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2025-05-28 16:07:47 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
-2025-05-28 16:07:47 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
-2025-05-28 16:07:47 [main] INFO  org.redisson.Version - Redisson 3.20.1
-2025-05-28 16:07:47 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-2025-05-28 16:07:47 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisLockController': Unsatisfied dependency expressed through field 'lockTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
-2025-05-28 16:07:47 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2025-05-28 16:07:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
-2025-05-28 16:07:47 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
-2025-05-28 16:07:47 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
-2025-05-28 16:07:47 [main] ERROR o.s.boot.SpringApplication - Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisLockController': Unsatisfied dependency expressed through field 'lockTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+2025-06-30 16:09:56 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-06-30 16:09:56 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_442 on WeiMacm.local with PID 7512 (/Users/w/Documents/chess_code_2/ruoyi/target/classes started by w in /Users/w/Documents/chess_code_2)
+2025-06-30 16:09:56 [main] INFO  com.ruoyi.RuoYiApplication - The following 1 profile is active: "dev"
+2025-06-30 16:09:57 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:09:57 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2025-06-30 16:09:57 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2025-06-30 16:09:58 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2025-06-30 16:09:58 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2025-06-30 16:09:58 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2025-06-30 16:09:59 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
+2025-06-30 16:10:00 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
+2025-06-30 16:10:00 [main] INFO  org.redisson.Version - Redisson 3.20.1
+2025-06-30 16:10:00 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-06-30 16:10:00 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisLockController': Unsatisfied dependency expressed through field 'lockTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
+2025-06-30 16:10:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2025-06-30 16:10:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2025-06-30 16:10:00 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2025-06-30 16:10:00 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2025-06-30 16:10:00 [main] ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redisLockController': Unsatisfied dependency expressed through field 'lockTemplate'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:713)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:693)
 	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
@@ -37,7 +37,7 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:409)
 	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
 	at com.ruoyi.RuoYiApplication.main(RuoYiApplication.java:21)
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'lockTemplate' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/LockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'lockTemplate' parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
@@ -53,7 +53,7 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:710)
 	... 18 common frames omitted
-Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'redissonLockExecutor' defined in class path resource [com/baomidou/lock/spring/boot/autoconfigure/RedissonLockAutoConfiguration.class]: Unsatisfied dependency expressed through method 'redissonLockExecutor' parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:801)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:536)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
@@ -73,7 +73,7 @@ Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Err
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
 	... 31 common frames omitted
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'redisson' defined in class path resource [org/redisson/spring/starter/RedissonAutoConfiguration.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:481)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
@@ -90,11 +90,11 @@ Caused by: org.springframework.beans.factory.BeanCreationException: Error creati
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:911)
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
 	... 48 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.redisson.api.RedissonClient]: Factory method 'redisson' threw exception; nested exception is org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
 	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:648)
 	... 62 common frames omitted
-Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: 127.0.0.1/127.0.0.1:6371
+Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Redis server: localhost/127.0.0.1:6379
 	at org.redisson.connection.pool.ConnectionPool.lambda$createConnection$0(ConnectionPool.java:154)
 	at java.util.concurrent.CompletableFuture.uniWhenComplete(CompletableFuture.java:774)
 	at java.util.concurrent.CompletableFuture$UniWhenComplete.tryFire(CompletableFuture.java:750)
@@ -115,13 +115,13 @@ Caused by: org.redisson.client.RedisConnectionException: Unable to connect to Re
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:6371
+Caused by: java.util.concurrent.CompletionException: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:6379
 	at java.util.concurrent.CompletableFuture.encodeRelay(CompletableFuture.java:326)
 	at java.util.concurrent.CompletableFuture.completeRelay(CompletableFuture.java:338)
 	at java.util.concurrent.CompletableFuture.uniRelay(CompletableFuture.java:925)
 	at java.util.concurrent.CompletableFuture$UniRelay.tryFire(CompletableFuture.java:913)
 	... 11 common frames omitted
-Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: 127.0.0.1/127.0.0.1:6371
+Caused by: io.netty.channel.AbstractChannel$AnnotatedConnectException: Connection refused: localhost/127.0.0.1:6379
 Caused by: java.net.ConnectException: Connection refused
 	at sun.nio.ch.SocketChannelImpl.checkConnect(Native Method)
 	at sun.nio.ch.SocketChannelImpl.finishConnect(SocketChannelImpl.java:716)
@@ -135,762 +135,28 @@ Caused by: java.net.ConnectException: Connection refused
 	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
 	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
 	at java.lang.Thread.run(Thread.java:750)
-2025-05-28 16:08:41 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
-2025-05-28 16:08:41 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_442 on WeiMacm.local with PID 7366 (/Users/w/Documents/chess_code/ruoyi/target/classes started by w in /Users/w/Documents/chess_code)
-2025-05-28 16:08:41 [main] INFO  com.ruoyi.RuoYiApplication - The following 1 profile is active: "dev"
-2025-05-28 16:08:42 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
-2025-05-28 16:08:42 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
-2025-05-28 16:08:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
-2025-05-28 16:08:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
-2025-05-28 16:08:42 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
-2025-05-28 16:08:42 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
-2025-05-28 16:08:43 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
-2025-05-28 16:08:43 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
-2025-05-28 16:08:43 [main] INFO  org.redisson.Version - Redisson 3.20.1
-2025-05-28 16:08:43 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
-2025-05-28 16:08:44 [redisson-netty-2-5] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 127.0.0.1/127.0.0.1:6379
-2025-05-28 16:08:44 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 127.0.0.1/127.0.0.1:6379
-2025-05-28 16:08:45 [main] INFO  io.undertow - starting server: Undertow - 2.2.28.Final
-2025-05-28 16:08:45 [main] INFO  org.xnio - XNIO version 3.8.7.Final
-2025-05-28 16:08:45 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
-2025-05-28 16:08:45 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
-2025-05-28 16:08:45 [main] INFO  com.ruoyi.RuoYiApplication - Started RuoYiApplication in 4.266 seconds (JVM running for 4.68)
-2025-05-28 16:08:45 [main] INFO  c.r.c.w.l.WebSocketTopicListener - 初始化WebSocket主题订阅监听器成功
-2025-05-28 16:08:45 [main] INFO  c.r.s.runner.SystemApplicationRunner - 初始化OSS配置成功
-2025-05-28 16:08:45 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
-2025-05-28 16:08:45 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
-2025-05-28 16:08:45 [RMI TCP Connection(2)-127.0.0.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2025-05-28 16:09:39 [XNIO-1 task-1] ERROR io.undertow.request - UT005023: Exception handling request to /resource/websocket
-org.springframework.web.util.NestedServletException: Request processing failed; nested exception is org.springframework.web.socket.server.HandshakeFailureException: Uncaught failure for request http://localhost:8083/resource/websocket?Authorization=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw&clientid=1763801325646753794; nested exception is cn.dev33.satoken.exception.NotLoginException: token 无效：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:497)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:584)
-	at io.undertow.servlet.handlers.ServletHandler.handleRequest(ServletHandler.java:74)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:129)
-	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at com.ruoyi.common.filter.RepeatableFilter.doFilter(RepeatableFilter.java:30)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at cn.dev33.satoken.filter.SaPathCheckFilterForServlet.doFilter(SaPathCheckFilterForServlet.java:55)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:96)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
-	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
-	at io.undertow.servlet.core.ManagedFilter.doFilter(ManagedFilter.java:67)
-	at io.undertow.servlet.handlers.FilterHandler$FilterChainImpl.doFilter(FilterHandler.java:131)
-	at io.undertow.servlet.handlers.FilterHandler.handleRequest(FilterHandler.java:84)
-	at io.undertow.servlet.handlers.security.ServletSecurityRoleHandler.handleRequest(ServletSecurityRoleHandler.java:62)
-	at io.undertow.servlet.handlers.ServletChain$1.handleRequest(ServletChain.java:68)
-	at io.undertow.servlet.handlers.ServletDispatchingHandler.handleRequest(ServletDispatchingHandler.java:36)
-	at io.undertow.servlet.handlers.RedirectDirHandler.handleRequest(RedirectDirHandler.java:68)
-	at io.undertow.servlet.handlers.security.SSLInformationAssociationHandler.handleRequest(SSLInformationAssociationHandler.java:117)
-	at io.undertow.servlet.handlers.security.ServletAuthenticationCallHandler.handleRequest(ServletAuthenticationCallHandler.java:57)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.security.handlers.AbstractConfidentialityHandler.handleRequest(AbstractConfidentialityHandler.java:46)
-	at io.undertow.servlet.handlers.security.ServletConfidentialityConstraintHandler.handleRequest(ServletConfidentialityConstraintHandler.java:64)
-	at io.undertow.security.handlers.AuthenticationMechanismsHandler.handleRequest(AuthenticationMechanismsHandler.java:60)
-	at io.undertow.servlet.handlers.security.CachedAuthenticatedSessionHandler.handleRequest(CachedAuthenticatedSessionHandler.java:77)
-	at io.undertow.security.handlers.AbstractSecurityContextAssociationHandler.handleRequest(AbstractSecurityContextAssociationHandler.java:43)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.SendErrorPageHandler.handleRequest(SendErrorPageHandler.java:52)
-	at io.undertow.server.handlers.PredicateHandler.handleRequest(PredicateHandler.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.handleFirstRequest(ServletInitialHandler.java:275)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$100(ServletInitialHandler.java:79)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:134)
-	at io.undertow.servlet.handlers.ServletInitialHandler$2.call(ServletInitialHandler.java:131)
-	at io.undertow.servlet.core.ServletRequestContextThreadSetupAction$1.call(ServletRequestContextThreadSetupAction.java:48)
-	at io.undertow.servlet.core.ContextClassLoaderSetupAction$1.call(ContextClassLoaderSetupAction.java:43)
-	at io.undertow.servlet.handlers.ServletInitialHandler.dispatchRequest(ServletInitialHandler.java:255)
-	at io.undertow.servlet.handlers.ServletInitialHandler.access$000(ServletInitialHandler.java:79)
-	at io.undertow.servlet.handlers.ServletInitialHandler$1.handleRequest(ServletInitialHandler.java:100)
-	at io.undertow.server.Connectors.executeRootHandler(Connectors.java:393)
-	at io.undertow.server.HttpServerExchange$1.run(HttpServerExchange.java:852)
-	at org.jboss.threads.ContextClassLoaderSavingRunnable.run(ContextClassLoaderSavingRunnable.java:35)
-	at org.jboss.threads.EnhancedQueueExecutor.safeRun(EnhancedQueueExecutor.java:2019)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.doRunTask(EnhancedQueueExecutor.java:1558)
-	at org.jboss.threads.EnhancedQueueExecutor$ThreadBody.run(EnhancedQueueExecutor.java:1423)
-	at org.xnio.XnioWorker$WorkerThreadFactory$1$1.run(XnioWorker.java:1282)
-	at java.lang.Thread.run(Thread.java:750)
-Caused by: org.springframework.web.socket.server.HandshakeFailureException: Uncaught failure for request http://localhost:8083/resource/websocket?Authorization=Bearer%20eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw&clientid=1763801325646753794; nested exception is cn.dev33.satoken.exception.NotLoginException: token 无效：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw
-	at org.springframework.web.socket.server.support.WebSocketHttpRequestHandler.handleRequest(WebSocketHttpRequestHandler.java:185)
-	at org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter.handle(HttpRequestHandlerAdapter.java:52)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1072)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:965)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	... 65 common frames omitted
-Caused by: cn.dev33.satoken.exception.NotLoginException: token 无效：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw
-	at cn.dev33.satoken.exception.NotLoginException.newInstance(NotLoginException.java:134)
-	at cn.dev33.satoken.stp.StpLogic.getLoginId(StpLogic.java:947)
-	at cn.dev33.satoken.stp.StpLogic.checkLogin(StpLogic.java:923)
-	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1297)
-	at cn.dev33.satoken.stp.StpLogic.getTokenSession(StpLogic.java:1317)
-	at cn.dev33.satoken.stp.StpUtil.getTokenSession(StpUtil.java:493)
-	at com.ruoyi.common.helper.LoginHelper.getLoginUser(LoginHelper.java:78)
-	at com.ruoyi.common.websocket.interceptor.PlusWebSocketInterceptor.beforeHandshake(PlusWebSocketInterceptor.java:35)
-	at org.springframework.web.socket.server.support.HandshakeInterceptorChain.applyBeforeHandshake(HandshakeInterceptorChain.java:60)
-	at org.springframework.web.socket.server.support.WebSocketHttpRequestHandler.handleRequest(WebSocketHttpRequestHandler.java:175)
-	... 69 common frames omitted
-2025-05-28 16:09:39 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /error],参数类型[param],参数:[{"Authorization":["Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJsb2dpblR5cGUiOiJsb2dpbiIsImxvZ2luSWQiOiJhcHBfdXNlcjoxNzYzODAxMzI1NjQ2NzUzNzk0Iiwicm5TdHIiOiJMTHNRVU9JZ3Fxd1lNUmRIbnZQZVJWSG5FYW1BeVgyciIsInVzZXJJZCI6MTc2MzgwMTMyNTY0Njc1Mzc5NH0.-qaj-X8PXfjsarkzFtFBUjxZ_ORkrMv-5HXbAuD7gLw"],"clientid":["1763801325646753794"]}]
-2025-05-28 16:09:39 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /error],耗时:[14]毫秒
-2025-05-28 16:09:42 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/user/login],参数类型[json],参数:[{"userName":"","password":"111111","loginName":"17626508081"}]
-2025-05-28 16:09:42 [XNIO-1 task-1] INFO  c.r.b.s.impl.BizUserServiceImpl - login req:{"loginName":"17626508081","params":{},"password":"111111","userName":""}
-2025-05-28 16:09:42 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/user/login],耗时:[211]毫秒
-2025-05-28 16:09:42 [XNIO-1 task-1] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: 7692f2a0-a65f-71d4-fc84-6a27868f9af5,userId:1763801325646753794,userType:app_user
-2025-05-28 16:09:43 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/armory/queryArmoryList],无参数
-2025-05-28 16:09:43 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/armory/queryArmoryList],耗时:[82]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/armory/queryUnfinishedList],参数类型[param],参数:[{"productId":["1690375113702400000"],"pageSize":["10"],"pageNum":["1"]}]
-2025-05-28 16:09:45 [XNIO-1 task-1] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: d442327a-b080-9010-5003-37038269cedd,userId:1763801325646753794,userType:app_user
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.b.s.i.BizVerdictRecordServiceImpl - queryUnfinishedList req:{"params":{},"productId":1690375113702400000}
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/armory/queryUnfinishedList],耗时:[58]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[38]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[4]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[3]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[3]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 16:09:45 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMap],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapCoordinate],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 16:09:46 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMap],耗时:[12]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapCoordinate],耗时:[193]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapChessImage],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapChessImage],耗时:[10]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[4]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[4]毫秒
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:46 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[4]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[4]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[3]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryVerdictResult],参数类型[json],参数:[{"id":"1907712707022872578"}]
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.b.s.i.BizVerdictRecordHistoryServiceImpl - queryVerdictResult req:{"id":1907712707022872578,"params":{}}
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryVerdictResult],耗时:[25]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getRoundStatus],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryPrompt],参数类型[json],参数:[{"id":"1907712707022872578","userId":"1763801325646753794"}]
-2025-05-28 16:09:47 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getRoundStatus],耗时:[8]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryPrompt],耗时:[8]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryAllChessPiecesInfo],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.b.s.i.BizVerdictRecordChessPiecesServiceImpl - queryAllChessPiecesInfo req:{"chessRound":1,"roundPeriod":1,"verdictRecordId":"1907712707022872578"}
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryAllChessPiecesInfo],耗时:[17]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 16:09:47 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 16:39:53 [XNIO-1 I/O-7] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: d442327a-b080-9010-5003-37038269cedd,userId:1763801325646753794,userType:app_user
-2025-05-28 16:39:53 [XNIO-1 I/O-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: 7692f2a0-a65f-71d4-fc84-6a27868f9af5,userId:1763801325646753794,userType:app_user
-2025-05-28 16:39:53 [XNIO-1 I/O-7] ERROR c.r.c.w.handler.PlusWebSocketHandler - [transport error] sessionId: d442327a-b080-9010-5003-37038269cedd , exception:Connection reset by peer
-2025-05-28 16:39:53 [XNIO-1 I/O-4] ERROR c.r.c.w.handler.PlusWebSocketHandler - [transport error] sessionId: 7692f2a0-a65f-71d4-fc84-6a27868f9af5 , exception:Connection reset by peer
-2025-05-28 17:06:55 [XNIO-1 task-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: 875d4e1a-723a-48ac-6468-8215faa78c65,userId:1763801325646753794,userType:app_user
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/user/login],参数类型[json],参数:[{"userName":"","password":"111111","loginName":"17626508081"}]
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.b.s.impl.BizUserServiceImpl - login req:{"loginName":"17626508081","params":{},"password":"111111","userName":""}
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/user/login],耗时:[57]毫秒
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: da58977c-a55b-3a90-97a2-f3e2f8ce7765,userId:1763801325646753794,userType:app_user
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/armory/queryArmoryList],无参数
-2025-05-28 17:06:57 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/armory/queryArmoryList],耗时:[16]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: ad2ce808-0df7-846f-009b-08670ec66abf,userId:1763801325646753794,userType:app_user
-2025-05-28 17:06:58 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/armory/queryUnfinishedList],参数类型[param],参数:[{"productId":["1690375113702400000"],"pageSize":["10"],"pageNum":["1"]}]
-2025-05-28 17:06:58 [XNIO-1 task-2] INFO  c.r.b.s.i.BizVerdictRecordServiceImpl - queryUnfinishedList req:{"params":{},"productId":1690375113702400000}
-2025-05-28 17:06:58 [XNIO-1 task-2] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/armory/queryUnfinishedList],耗时:[29]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[3]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[1]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[3]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[4]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[3]毫秒
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856578188340719617],无参数
-2025-05-28 17:06:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856578188340719617],耗时:[2]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapCoordinate],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:06:59 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMap],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:06:59 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMap],耗时:[12]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapCoordinate],耗时:[148]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapChessImage],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapChessImage],耗时:[6]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[2]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:06:59 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[4]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryVerdictResult],参数类型[json],参数:[{"id":"1907712707022872578"}]
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.b.s.i.BizVerdictRecordHistoryServiceImpl - queryVerdictResult req:{"id":1907712707022872578,"params":{}}
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryVerdictResult],耗时:[6]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryPrompt],参数类型[json],参数:[{"id":"1907712707022872578","userId":"1763801325646753794"}]
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getRoundStatus],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 17:07:00 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryPrompt],耗时:[4]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getRoundStatus],耗时:[4]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryAllChessPiecesInfo],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.b.s.i.BizVerdictRecordChessPiecesServiceImpl - queryAllChessPiecesInfo req:{"chessRound":1,"roundPeriod":1,"verdictRecordId":"1907712707022872578"}
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryAllChessPiecesInfo],耗时:[12]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:07:00 [XNIO-1 task-4] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:28:19 [XNIO-1 I/O-8] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: ad2ce808-0df7-846f-009b-08670ec66abf,userId:1763801325646753794,userType:app_user
-2025-05-28 17:28:19 [XNIO-1 I/O-3] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: da58977c-a55b-3a90-97a2-f3e2f8ce7765,userId:1763801325646753794,userType:app_user
-2025-05-28 17:28:19 [XNIO-1 I/O-8] ERROR c.r.c.w.handler.PlusWebSocketHandler - [transport error] sessionId: ad2ce808-0df7-846f-009b-08670ec66abf , exception:Connection reset by peer
-2025-05-28 17:34:57 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapCoordinate],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:34:57 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMap],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:34:57 [XNIO-1 task-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: 87cecb28-0030-a2b0-9ee1-ce4e77e2c021,userId:1763801325646753794,userType:app_user
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMap],耗时:[63]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapCoordinate],耗时:[426]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getMapChessImage],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578"}]
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getMapChessImage],耗时:[15]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[8]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[4]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[4]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[4]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[7]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[4]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryVerdictResult],参数类型[json],参数:[{"id":"1907712707022872578"}]
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.b.s.i.BizVerdictRecordHistoryServiceImpl - queryVerdictResult req:{"id":1907712707022872578,"params":{}}
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryVerdictResult],耗时:[23]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryPrompt],参数类型[json],参数:[{"id":"1907712707022872578","userId":"1763801325646753794"}]
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/getRoundStatus],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 17:34:58 [XNIO-1 task-1] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryPrompt],耗时:[10]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/getRoundStatus],耗时:[10]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[POST /api/armory/queryAllChessPiecesInfo],参数类型[json],参数:[{"verdictRecordId":"1907712707022872578","chessRound":1,"roundPeriod":1}]
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.b.s.i.BizVerdictRecordChessPiecesServiceImpl - queryAllChessPiecesInfo req:{"chessRound":1,"roundPeriod":1,"verdictRecordId":"1907712707022872578"}
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[POST /api/armory/queryAllChessPiecesInfo],耗时:[20]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[3]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589427889639426],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589427889639426],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856589095558156289],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856589095558156289],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[4]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[2]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856590244013117442],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856590244013117442],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:58 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[2]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588684893851649],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588684893851649],耗时:[1]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[2]毫秒
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]开始请求 => URL[GET /api/system/getOssById/1856588464395096066],无参数
-2025-05-28 17:34:59 [XNIO-1 task-5] INFO  c.r.f.i.PlusWebInvokeTimeInterceptor - [PLUS]结束请求 => URL[GET /api/system/getOssById/1856588464395096066],耗时:[1]毫秒
-2025-05-28 17:59:41 [XNIO-1 I/O-4] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: 87cecb28-0030-a2b0-9ee1-ce4e77e2c021,userId:1763801325646753794,userType:app_user
-2025-05-28 17:59:41 [XNIO-1 I/O-4] ERROR c.r.c.w.handler.PlusWebSocketHandler - [transport error] sessionId: 87cecb28-0030-a2b0-9ee1-ce4e77e2c021 , exception:Connection reset by peer
-2025-05-28 18:07:12 [XNIO-1 task-5] INFO  c.r.c.w.handler.PlusWebSocketHandler - [connect] sessionId: f1da75b7-28cb-d973-d468-fe2b7bef1135,userId:1763801325646753794,userType:app_user
-2025-05-28 18:07:12 [XNIO-1 I/O-2] ERROR c.r.c.w.handler.PlusWebSocketHandler - [transport error] sessionId: f1da75b7-28cb-d973-d468-fe2b7bef1135 , exception:Connection reset by peer
-2025-05-28 18:07:12 [XNIO-1 I/O-2] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: f1da75b7-28cb-d973-d468-fe2b7bef1135,userId:1763801325646753794,userType:app_user
-2025-05-28 18:25:33 [master housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - master - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@4c999898 (Server shutdown in progress). Possibly consider using a shorter maxLifetime value.
-2025-05-28 18:25:36 [master housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - master - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@5fbac8a9 (Communications link failure
-
-The last packet successfully received from the server was 28,184 milliseconds ago. The last packet sent successfully to the server was 28,184 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
-2025-05-28 18:25:38 [master housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - master - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@3b746bd9 (Communications link failure
-
-The last packet successfully received from the server was 30,810 milliseconds ago. The last packet sent successfully to the server was 30,810 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
-2025-05-28 18:25:38 [master housekeeper] WARN  com.zaxxer.hikari.pool.PoolBase - master - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@79251312 (Communications link failure
-
-The last packet successfully received from the server was 29,156 milliseconds ago. The last packet sent successfully to the server was 29,156 milliseconds ago.). Possibly consider using a shorter maxLifetime value.
-2025-05-28 18:25:39 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.28.Final
-2025-05-28 18:25:39 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
-2025-05-28 18:25:39 [SpringApplicationShutdownHook] INFO  c.r.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
-2025-05-28 18:25:39 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
-2025-05-28 18:25:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2025-06-30 16:11:01 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-06-30 16:11:01 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_442 on WeiMacm.local with PID 7602 (/Users/w/Documents/chess_code_2/ruoyi/target/classes started by w in /Users/w/Documents/chess_code_2)
+2025-06-30 16:11:01 [main] INFO  com.ruoyi.RuoYiApplication - The following 1 profile is active: "dev"
+2025-06-30 16:11:02 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-06-30 16:11:02 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2025-06-30 16:11:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2025-06-30 16:11:02 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2025-06-30 16:11:02 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2025-06-30 16:11:02 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2025-06-30 16:11:03 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
+2025-06-30 16:11:03 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
+2025-06-30 16:11:03 [main] INFO  org.redisson.Version - Redisson 3.20.1
+2025-06-30 16:11:03 [main] WARN  i.n.r.d.DnsServerAddressStreamProviders - Can not find io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider in the classpath, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'
+2025-06-30 16:11:03 [redisson-netty-2-1] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 47.116.162.173/47.116.162.173:6381
+2025-06-30 16:11:04 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 47.116.162.173/47.116.162.173:6381
+2025-06-30 16:11:04 [main] INFO  io.undertow - starting server: Undertow - 2.2.28.Final
+2025-06-30 16:11:04 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2025-06-30 16:11:04 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2025-06-30 16:11:04 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2025-06-30 16:11:04 [main] INFO  com.ruoyi.RuoYiApplication - Started RuoYiApplication in 3.649 seconds (JVM running for 3.946)
+2025-06-30 16:11:04 [main] INFO  c.r.c.w.l.WebSocketTopicListener - 初始化WebSocket主题订阅监听器成功
+2025-06-30 16:11:05 [main] INFO  c.r.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2025-06-30 16:11:05 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2025-06-30 16:11:05 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2025-06-30 16:11:05 [RMI TCP Connection(4)-127.0.0.1] INFO  io.undertow.servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
