@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictBlowEffectMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictBlowEffect" id="BizVerdictBlowEffectResult">
+        <result property="id" column="id"/>
+        <result property="verdictType" column="verdict_type"/>
+        <result property="attackScore" column="attack_score"/>
+        <result property="diceScore" column="dice_score"/>
+        <result property="blowEffect" column="blow_effect"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+    <select id="getBlowEffectList" resultType="com.ruoyi.business.domain.vo.BizVerdictBlowEffectVo">
+
+        SELECT
+            attack_score,
+            dice_score,
+            GROUP_CONCAT( blow_effect ORDER BY attack_score ASC ) as blowEffects
+        FROM
+            biz_verdict_blow_effect
+        WHERE verdict_type = #{type}
+        GROUP BY
+            dice_score
+
+        ORDER BY id
+    </select>
+
+
+</mapper>

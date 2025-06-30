@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordRoundMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordRound" id="BizVerdictRecordRoundResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="roundPeriod" column="round_period"/>
+        <result property="status" column="status"/>
+        <result property="coverUrl" column="cover_url"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <resultMap type="com.ruoyi.business.domain.vo.BizVerdictRecordRoundVo" id="BizVerdictRecordRoundResultTree">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="roundPeriod" column="round_period"/>
+        <result property="status" column="status"/>
+        <result property="coverUrl" column="cover_url"/>
+        <result property="delFlag" column="del_flag"/>
+        <collection property="historyVoList" column="id" select="getHistoryListByRoundId">
+        </collection>
+    </resultMap>
+
+    <select id="getHistoryListByRoundId" parameterType="string" resultMap="BizVerdictRecordHistoryResult">
+        select h.*,cp.maneuver_value from biz_verdict_record_history h
+            left join biz_chess_pieces cp on cp.chess_pieces_number = h.chess_pieces_number
+                 where h.round_id=#{id} order by h.create_time asc
+    </select>
+
+    <select id="getHistoryTreeByRound" resultMap="BizVerdictRecordRoundResultTree">
+        select * from biz_verdict_record_round ${ew.getCustomSqlSegment}
+    </select>
+
+
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordHistory" id="BizVerdictRecordHistoryResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="roundId" column="round_id"/>
+        <result property="chessPiecesNumber" column="chess_pieces_number"/>
+        <result property="selfCoordinate" column="self_coordinate"/>
+        <result property="targetCoordinate" column="target_coordinate"/>
+        <result property="actionMode" column="action_mode"/>
+        <result property="isEndRound" column="is_end_round"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="roundPeriod" column="round_period"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="status" column="status"/>
+        <result property="actionDesc" column="action_desc"/>
+        <result property="chessPiecesInfo" column="chess_pieces_info"/>
+        <result property="attackResult" column="attack_result"/>
+        <result property="attackScore" column="attack_score"/>
+        <result property="targetChessPiecesNumber" column="target_chess_pieces_number"/>
+        <result property="maneuverValue" column="maneuver_value"/>
+    </resultMap>
+
+</mapper>

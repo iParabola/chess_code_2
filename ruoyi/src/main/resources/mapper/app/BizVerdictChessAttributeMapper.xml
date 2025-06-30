@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.app.verdictChessAttribute.mapper.BizVerdictChessAttributeMapper">
+
+    <resultMap type="com.ruoyi.app.verdictChessAttribute.domain.BizVerdictChessAttribute" id="BizVerdictChessAttributeResult">
+        <result property="id" column="id"/>
+        <result property="chessTypeId" column="chess_type_id"/>
+        <result property="chessAttributeId" column="chess_attribute_id"/>
+        <result property="attrName" column="attr_name"/>
+        <result property="attrCode" column="attr_code"/>
+        <result property="attrType" column="attr_type"/>
+        <result property="ruleDimensionCode" column="rule_dimension_code"/>
+        <result property="attributeId" column="attribute_id"/>
+        <result property="attrValue" column="attr_value"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,1 @@
+{"doc":" @author kyc\n @date 2024/2/27 12:52\n","fields":[],"enumConstants":[],"methods":[{"name":"checkMobileFormatIsRight","paramTypes":["java.lang.String"],"doc":" 校验手机号格式是否正确\n\n @param mobile\n @return true:格式正确，false:格式错误\n"}],"constructors":[]}

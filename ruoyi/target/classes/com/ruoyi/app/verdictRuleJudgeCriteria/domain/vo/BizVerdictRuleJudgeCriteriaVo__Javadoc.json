@@ -1,0 +1,1 @@
+{"doc":" 裁决判断前置条件视图对象 biz_verdict_rule_judge_criteria\n\n @author ccc\n @date 2024-09-18\n","fields":[{"name":"verdictTypeId","doc":" biz_verdict_type表id\n"},{"name":"stage","doc":" 裁决阶段：01~04  定、判、裁、定\n"},{"name":"formula","doc":" 计算公式\n"}],"enumConstants":[],"methods":[],"constructors":[]}

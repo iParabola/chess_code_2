@@ -1,0 +1,1 @@
+{"doc":" 通用 用户服务\n\n @author Lion Li\n","fields":[],"enumConstants":[],"methods":[{"name":"selectUserNameById","paramTypes":["java.lang.Long"],"doc":" 通过用户ID查询用户账户\n\n @param userId 用户ID\n @return 用户账户\n"}],"constructors":[]}

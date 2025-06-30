@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.app.verdictRuleValue.mapper.BizVerdictRuleValueMapper">
+
+    <resultMap type="com.ruoyi.app.verdictRuleValue.domain.BizVerdictRuleValue" id="BizVerdictRuleValueResult">
+        <result property="id" column="id"/>
+        <result property="verdictTypeId" column="verdict_type_id"/>
+        <result property="verdictTypeName" column="verdict_type_name"/>
+        <result property="verdictRuleId" column="verdict_rule_id"/>
+        <result property="verdictParamName" column="verdict_param_name"/>
+        <result property="verdicRuleDimensionValue" column="verdic_rule_dimension_value"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+    <delete id="physicalDeleteById">
+             DELETE FROM biz_verdict_rule_value WHERE verdict_rule_Id = #{verdictRuleId}
+      </delete>
+</mapper>

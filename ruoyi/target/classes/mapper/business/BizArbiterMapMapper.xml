@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizArbiterMapMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizArbiterMap" id="BizArbiterMapResult">
+        <result property="id" column="id"/>
+        <result property="mapName" column="map_name"/>
+        <result property="transverseDimension" column="transverse_dimension"/>
+        <result property="longitudinalDimension" column="longitudinal_dimension"/>
+        <result property="initialCoordinate" column="initial_coordinate"/>
+        <result property="initialAbscissa" column="initial_abscissa"/>
+        <result property="initialOrdinate" column="initial_ordinate"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="mapCover" column="map_cover"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="mapWidth" column="map_width"/>
+        <result property="mapHeight" column="map_height"/>
+        <result property="mapRadius" column="map_radius"/>
+        <result property="mapTop" column="map_top"/>
+        <result property="mapLeft" column="map_left"/>
+    </resultMap>
+
+
+</mapper>

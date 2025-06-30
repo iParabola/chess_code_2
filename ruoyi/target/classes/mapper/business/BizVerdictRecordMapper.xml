@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecord" id="BizVerdictRecordResult">
+        <result property="id" column="id"/>
+        <result property="inviterUserId" column="inviter_user_id"/>
+        <result property="firstUserId" column="first_user_id"/>
+        <result property="firstCommanderUserId" column="first_commander_user_id"/>
+        <result property="firstCampId" column="first_camp_id"/>
+        <result property="secondUserId" column="second_user_id"/>
+        <result property="secondCommanderUserId" column="second_commander_user_id"/>
+        <result property="secondCampId" column="second_camp_id"/>
+        <result property="scenarioId" column="scenario_id"/>
+        <result property="secondJudgeUserId" column="second_judge_user_id"/>
+        <result property="firstJudgeUserId" column="first_judge_user_id"/>
+        <result property="chessPiecesIds" column="chess_pieces_ids"/>
+        <result property="inviteCode" column="invite_code"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="watchMode" column="watch_mode"/>
+        <result property="status" column="status"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="roundPeriod" column="round_period"/>
+        <result property="chessRoundLimit" column="chess_round_limit"/>
+        <result property="verdictResult" column="verdict_result"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+    <select id="myQueryPageList" resultType="com.ruoyi.business.domain.dto.QueryVerdictRecordDetail">
+
+        SELECT bvr.id                                                                         as verdictRecordId,
+               inviter_user_id                                                                as inviterUserId,
+               (select user_name from biz_user u where bvr.inviter_user_id = u.id)            as inviterUserName,
+               bvr.first_user_id                                                              as firstUserId,
+               bvr.first_commander_user_id                                                    as firstCommanderUserId,
+               bvr.first_judge_user_id                                                        as firstJudgeUserId,
+               (select user_name from biz_user u where bvr.first_user_id = u.id)              as firstUserName,
+               (select user_name from biz_user u where bvr.first_judge_user_id = u.id)        as firstJudgeUserName,
+               (select user_name from biz_user u where bvr.first_commander_user_id = u.id)    as firstCommanderUserName,
+               bvr.first_camp_id                                                              as firstCampId,
+               (select name from biz_chess_pieces_camp cpc where cpc.id = bvr.first_camp_id)  as firstCampName,
+               bvr.second_user_id                                                             as secondUserId,
+               bvr.second_judge_user_id                                                       as secondJudgeUserId,
+               bvr.second_commander_user_id                                                   as secondCommanderUserId,
+               (select user_name from biz_user u where bvr.second_user_id = u.id)             as secondUserName,
+               (select user_name from biz_user u where bvr.second_judge_user_id = u.id)       as secondJudgeUserName,
+               (select user_name from biz_user u where bvr.second_commander_user_id = u.id)   as secondCommanderUserName,
+               bvr.second_camp_id                                                             as secondCampId,
+               (select name from biz_chess_pieces_camp cpc where cpc.id = bvr.second_camp_id) as secondCampName,
+               bvr.scenario_id                                                                as scenarioId,
+               s.scenario_name                                                                as scenarioName,
+               bvr.invite_code                                                                as invite_code,
+               bvr.watch_mode                                                                 as watchMode,
+               bvr.status,
+               bvr.chess_round                                                                as chessRound,
+               bvr.chess_round_limit                                                          as chessRoundLimit,
+               p.cover                                                                        as cover,
+               bvr.del_flag                                                                   as del_flag,
+               bvr.create_time                                                                as create_time
+        FROM `biz_verdict_record` bvr
+                 left join biz_scenario_create s on s.id = bvr.scenario_id
+                 left join biz_product p on p.id = s.product_id
+            ${ew.getCustomSqlSegment}
+    </select>
+
+
+</mapper>

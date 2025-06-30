@@ -1,0 +1,1 @@
+{"doc":"","fields":[{"name":"roomUserMap","doc":" 房间用户\n"},{"name":"actionUserId","doc":" 当前行动用户id\n"},{"name":"action","doc":" 行动类型\n"},{"name":"msg","doc":" 消息\n"},{"name":"data","doc":" 数据\n"}],"enumConstants":[],"methods":[],"constructors":[]}

@@ -1,0 +1,1 @@
+{"doc":"","fields":[{"name":"scenarioId","doc":" 想定id\n"},{"name":"chessPiecesIds","doc":" chess_pieces表关联id\n"}],"enumConstants":[],"methods":[],"constructors":[]}

@@ -1,0 +1,1 @@
+{"doc":" 注册验证\n\n @author Lion Li\n","fields":[],"enumConstants":[],"methods":[{"name":"register","paramTypes":["com.ruoyi.common.core.domain.model.RegisterBody"],"doc":" 用户注册\n"}],"constructors":[]}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizScenarioCreateMapper">
+
+    <resultMap id="BizScenarioCreateResult" type="com.ruoyi.business.domain.BizScenarioCreate">
+        <id property="id" column="id"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="chessPiecesIds" column="chess_pieces_ids"/>
+        <result property="arbiterMapId" column="arbiter_map_id"/>
+        <result property="scenarioName" column="scenario_name"/>
+        <result property="chessRoundLimit" column="chess_round_limit"/>
+        <result property="stageConfig" column="stage_config"/>
+        <result property="productId" column="product_id"/>
+        <!-- Add other fields as necessary -->
+    </resultMap>
+
+    <select id="selectAll" resultMap="BizScenarioCreateResult">
+        SELECT * FROM biz_scenario_create
+    </select>
+
+    <select id="selectById" parameterType="long" resultMap="BizScenarioCreateResult">
+        SELECT * FROM biz_scenario_create WHERE id = #{id}
+    </select>
+
+    <insert id="insert" parameterType="com.ruoyi.business.domain.BizScenarioCreate">
+        INSERT INTO biz_scenario_create (id, create_time, update_time, chess_pieces_ids,arbiter_map_id,chess_round_limit,stage_config,scenario_name,product_id)
+        VALUES (#{id}, #{createTime}, #{updateTime}, #{chessPiecesIds},#{arbiterMapId},#{chessRoundLimit},"直瞄射击阶段,机动阶段,解除压制阶段,间瞄射击阶段",#{scenarioName},#{productId})
+    </insert>
+
+    <update id="update" parameterType="com.ruoyi.business.domain.BizScenarioCreate">
+        UPDATE biz_scenario_create
+        SET create_time = #{createTime},
+            update_time = #{updateTime},
+            chess_pieces_ids = #{chessPiecesIds},
+            arbiter_map_id = #{arbiterMapId},
+        WHERE scenario_id = #{id}
+    </update>
+
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM biz_scenario_create WHERE id = #{id}
+    </delete>
+
+</mapper>

@@ -1,0 +1,9 @@
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.28.Final
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  io.undertow.servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+2025-04-07 14:53:01 [XNIO-1 I/O-5] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: 3812d8b1-7db9-a0d4-a0e4-dedbb567bc11,userId:1763801325646753794,userType:app_user
+2025-04-07 14:53:01 [XNIO-1 I/O-8] INFO  c.r.c.w.handler.PlusWebSocketHandler - [disconnect] sessionId: c2f18fb8-f97c-5ab4-65bc-cd504863fd72,userId:1763801325646753794,userType:app_user
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  c.r.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2025-04-07 14:53:01 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye

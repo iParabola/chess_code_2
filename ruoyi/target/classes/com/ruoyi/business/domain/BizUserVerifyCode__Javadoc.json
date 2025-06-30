@@ -1,0 +1,1 @@
+{"doc":" 用户验证码对象 biz_user_verify_code\n\n @author ruoyi\n @date 2024-02-20\n","fields":[{"name":"mobile","doc":" 手机号\n"},{"name":"verifyCode","doc":" 验证码\n"},{"name":"expireTime","doc":" 失效时间\n"},{"name":"remark","doc":" 备注\n"},{"name":"ext","doc":" 扩展字段\n"},{"name":"delFlag","doc":" 删除标记\n"}],"enumConstants":[],"methods":[],"constructors":[]}

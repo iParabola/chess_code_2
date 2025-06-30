@@ -1,0 +1,1 @@
+{"doc":" WebSocket 演示案例\n\n @author zendwang\n","fields":[],"enumConstants":[],"methods":[{"name":"send","paramTypes":["com.ruoyi.common.websocket.dto.WebSocketMessageDTO"],"doc":" 发布消息\n\n @param dto 发送内容\n"}],"constructors":[]}

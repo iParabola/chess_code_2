@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizIndirectBlowEffectMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizIndirectBlowEffect" id="BizIndirectBlowEffectResult">
+        <result property="id" column="id"/>
+        <result property="attackScore" column="attack_score"/>
+        <result property="diceScore" column="dice_score"/>
+        <result property="blowEffect" column="blow_effect"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+
+</mapper>

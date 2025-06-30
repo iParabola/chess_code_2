@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordScoreMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordScore" id="BizVerdictRecordScoreResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="userName" column="user_name"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="content" column="content"/>
+        <result property="score" column="score"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="campName" column="camp_name"/>
+        <result property="standard" column="standard"/>
+        <result property="type" column="type"/>
+    </resultMap>
+    <select id="getRealTimeScore" resultType="com.ruoyi.business.domain.vo.BizVerdictRecordScoreVo" parameterType="long">
+        SELECT camp_id, camp_name, type, SUM(score) AS score
+        FROM biz_verdict_record_score
+        WHERE verdict_record_id = #{verdictRecordId}
+        GROUP BY camp_id, camp_name, type
+    </select>
+    <select id="getSummaryScore" resultType="com.ruoyi.business.domain.vo.BizVerdictRecordScoreVo" parameterType="long">
+        select camp_id, GROUP_CONCAT(score) as scores, -1 as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 1
+        group by camp_id, type, verdict_record_id
+
+        union
+
+        select camp_id, GROUP_CONCAT(score) as scores, -1 as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 2
+        group by camp_id, type, verdict_record_id
+
+        union
+
+        select camp_id, GROUP_CONCAT(score) as scores, -1 as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 3
+        group by camp_id, type, verdict_record_id
+
+        union
+
+        select camp_id, GROUP_CONCAT(score) as scores, -1 as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 4
+        group by camp_id, type, verdict_record_id
+
+        union
+
+        select camp_id, GROUP_CONCAT(score) as scores, -1 as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 5
+        group by camp_id, type, verdict_record_id
+
+        union
+
+        select camp_id, '' as scores, sum(score) as score, type, verdict_record_id
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId}
+        group by camp_id, type, verdict_record_id
+    </select>
+
+    <select id="getSummaryScoreNew" resultType="com.ruoyi.business.domain.vo.BizVerdictRecordScoreVo" parameterType="long">
+        select camp_id, score, type, verdict_record_id, chess_round
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 6
+
+        union
+
+
+        select camp_id, score, type, verdict_record_id, chess_round
+        from biz_verdict_record_score
+        where verdict_record_id = #{verdictRecordId} and type = 7
+
+    </select>
+
+
+    <select id="getSummaryTotal" resultType="com.ruoyi.business.domain.vo.BizVerdictRecordScoreVo">
+        select
+            camp_id,sum(score) score
+        from biz_verdict_record_score   where verdict_record_id =  #{verdictRecordId} group by camp_id
+    </select>
+
+
+</mapper>

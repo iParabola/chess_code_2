@@ -1,0 +1,1 @@
+{"doc":" 阶段管理业务对象 biz_scenario_stage\n\n @author ruoyi\n @date 2024-03-01\n","fields":[{"name":"stageName","doc":" 阶段名称\n"},{"name":"sort","doc":" 排序\n"},{"name":"scenarioId","doc":" 所属想定\n"}],"enumConstants":[],"methods":[],"constructors":[]}

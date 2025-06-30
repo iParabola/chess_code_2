@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordChessPiecesMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordChessPieces" id="BizVerdictRecordChessPiecesResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="chessPiecesNumber" column="chess_pieces_number"/>
+        <result property="chessPiecesTypeId" column="chess_pieces_type_id"/>
+        <result property="chessPiecesTypeName" column="chess_pieces_type_name"/>
+        <result property="chessPiecesCampId" column="chess_pieces_camp_id"/>
+        <result property="chessPiecesCampName" column="chess_pieces_camp_name"/>
+        <result property="chessPiecesName" column="chess_pieces_name"/>
+        <result property="vitaValue" column="vita_value"/>
+        <result property="maneuverValue" column="maneuver_value"/>
+        <result property="attackValue" column="attack_value"/>
+        <result property="defenseValue" column="defense_value"/>
+        <result property="status" column="status"/>
+        <result property="coordinate" column="coordinate"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="isHide" column="is_hide"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="visibleRange" column="visible_range"/>
+        <result property="offset" column="offset"/>
+        <result property="maneuverType" column="maneuver_type"/>
+        <result property="closeAttackValue" column="close_attack_value"/>
+        <result property="trafficCapacityLevel" column="traffic_capacity_level"/>
+        <result property="trafficCapacityDistance" column="traffic_capacity_distance"/>
+        <result property="closeReconCapacityLevel" column="close_recon_capacity_level"/>
+        <result property="closeReconCapacityDistance" column="close_recon_capacity_distance"/>
+        <result property="photoelectricReconCapacityLevel" column="photoelectric_recon_capacity_level"/>
+        <result property="photoelectricReconCapacityDistance" column="photoelectric_recon_capacity_distance"/>
+        <result property="groundReconCapacityLevel" column="ground_recon_capacity_level"/>
+        <result property="groundReconCapacityDistance" column="ground_recon_capacity_distance"/>
+        <result property="weapon1AttackValue" column="weapon1_attack_value"/>
+        <result property="weapon1AttackDistance" column="weapon1_attack_distance"/>
+        <result property="weapon2AttackValue" column="weapon2_attack_value"/>
+        <result property="weapon2AttackDistance" column="weapon2_attack_distance"/>
+        <result property="antiAirAttackValue" column="anti_air_attack_value"/>
+        <result property="antiAirAttackDistance" column="anti_air_attack_distance"/>
+        <result property="communicationCapabilityLevel" column="communication_capability_level"/>
+        <result property="commandControlCapabilityLevel" column="command_control_capability_level"/>
+        <result property="disturbValue" column="disturb_value"/>
+        <result property="disturbDistance" column="disturb_distance"/>
+        <result property="fromOffset" column="from_offset"/>
+        <result property="fromCoordinate" column="from_coordinate"/>
+        <result property="roundActionPoint" column="round_action_point"/>
+    </resultMap>
+
+    <select id="queryChessRecordByRound" resultType="com.ruoyi.business.domain.vo.BizVerdictRecordHistoryVo">
+        SELECT vrh.*,
+               cp.chess_pieces_cover
+        FROM `biz_verdict_record_history` vrh
+                 left join biz_chess_pieces cp on cp.chess_pieces_number = vrh.chess_pieces_number
+            ${ew.getCustomSqlSegment}
+    </select>
+
+
+    <update id="updateFromLocation" parameterType="long">
+        update biz_verdict_record_chess_pieces set from_offset = offset, from_coordinate = coordinate where verdict_record_id=#{id}
+    </update>
+
+    <update id="setActionPointFalse" parameterType="bizVerdictRecordChessPiecesBo">
+        update biz_verdict_record_chess_pieces set round_action_point=false
+        <where>
+            <if test="bizVerdictRecordChessPiecesBo.verdictRecordId != null">
+                AND verdict_record_id=#{bizVerdictRecordChessPiecesBo.verdictRecordId}
+            </if>
+            <if test="bizVerdictRecordChessPiecesBo.offset != null">
+                AND offset = #{bizVerdictRecordChessPiecesBo.offset}
+            </if>
+            <if test="bizVerdictRecordChessPiecesBo.chessPiecesNumber != null">
+                AND chess_pieces_number = #{bizVerdictRecordChessPiecesBo.chessPiecesNumber}
+            </if>
+        </where>
+
+    </update>
+    <update id="resetActionPointFalse" parameterType="bizVerdictRecordChessPiecesBo">
+    update biz_verdict_record_chess_pieces set round_action_point=true WHERE verdict_record_id=#{bizVerdictRecordChessPiecesBo.verdictRecordId}
+    </update>
+
+</mapper>

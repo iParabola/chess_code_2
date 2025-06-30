@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.app.deployChess.mapper.MapChessMapper">
+    <delete id="delVoById" parameterType="com.ruoyi.business.domain.bo.BizVerdictRecordHistoryBo">
+        DELETE FROM biz_verdict_record_chess_pieces
+        <where>
+
+            <if test="verdictRecordId != null">
+                AND verdict_record_id = #{verdictRecordId}
+            </if>
+            <if test="targetCoordinate != null">
+                AND coordinate = #{targetCoordinate}
+            </if>
+            <if test="chessPiecesNumber != null">
+                AND chess_pieces_number = #{chessPiecesNumber}
+            </if>
+        </where>
+        LIMIT 1;
+    </delete>
+    <delete id="delVoByIdC">
+        DELETE FROM biz_scenario_record_chess_pieces
+        <where>
+
+            <if test="scenarioRecordId != null">
+                AND scenario_record_id = #{scenarioRecordId}
+            </if>
+            <if test="targetCoordinate != null">
+                AND coordinate = #{targetCoordinate}
+            </if>
+            <if test="chessPiecesNumber != null">
+                AND chess_pieces_number = #{chessPiecesNumber}
+            </if>
+        </where>
+        LIMIT 1;
+    </delete>
+
+</mapper>

@@ -1,0 +1,1 @@
+{"doc":" 裁决类型Mapper接口\n\n @author ruoyi\n @date 2024-08-10\n","fields":[],"enumConstants":[],"methods":[{"name":"selectBizVerdictList","paramTypes":["com.baomidou.mybatisplus.core.conditions.Wrapper"],"doc":" 查询裁决分类数据\n\n @param queryWrapper 查询条件\n @return 部门信息集合\n"}],"constructors":[]}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.app.verdictChess.mapper.BizVerdictChessMapper">
+
+    <resultMap type="com.ruoyi.app.verdictChess.domain.BizVerdictChess" id="BizVerdictChessResult">
+        <result property="id" column="id"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="verdictTypeId" column="verdict_type_id"/>
+        <result property="verdictTypeCode" column="verdict_type_code"/>
+        <result property="chessTypeId" column="chess_type_id"/>
+        <result property="chessTypeName" column="chess_type_name"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+    <select id="queryList" resultType="com.ruoyi.app.verdictChess.domain.vo.BizVerdictChessDto">
+        SELECT bvc.id as verdictChessId, bvc.product_id as productId, bvc.verdict_type_id as verdictTypeId,bvc.chess_type_id as chessTypeId,
+               bp.product_name as productName, bvt.name as verdictTypeName,bvt.code as verdictTypeCode,
+               bcpt.name as chessTypeName
+        FROM biz_verdict_chess bvc
+        LEFT JOIN biz_product bp on bp.id = bvc.product_id
+        LEFT JOIN biz_verdict_type bvt on bvt.id = bvc.verdict_type_id
+        LEFT JOIN biz_chess_pieces_type bcpt on bcpt.id = bvc.chess_type_id
+        ${ew.getCustomSqlSegment}
+    </select>
+
+</mapper>

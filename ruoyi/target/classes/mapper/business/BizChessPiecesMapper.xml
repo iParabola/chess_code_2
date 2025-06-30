@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizChessPiecesMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizChessPieces" id="BizChessPiecesResult">
+        <result property="id" column="id"/>
+        <result property="chessPiecesNumber" column="chess_pieces_number"/>
+        <result property="chessPiecesTypeId" column="chess_pieces_type_id"/>
+        <result property="chessPiecesTypeName" column="chess_pieces_type_name"/>
+        <result property="chessPiecesCampId" column="chess_pieces_camp_id"/>
+        <result property="chessPiecesCampName" column="chess_pieces_camp_name"/>
+        <result property="chessPiecesName" column="chess_pieces_name"/>
+        <result property="chessPiecesCover" column="chess_pieces_cover"/>
+        <result property="vitaValue" column="vita_value"/>
+        <result property="maneuverValue" column="maneuver_value"/>
+        <result property="attackValue" column="attack_value"/>
+        <result property="defenseValue" column="defense_value"/>
+        <result property="status" column="status"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="equipment" column="equipment"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="visibleRange" column="visible_range"/>
+        <result property="maneuverType" column="maneuver_type"/>
+        <result property="closeAttackValue" column="close_attack_value"/>
+        <result property="trafficCapacityLevel" column="traffic_capacity_level"/>
+        <result property="trafficCapacityDistance" column="traffic_capacity_distance"/>
+        <result property="closeReconCapacityLevel" column="close_recon_capacity_level"/>
+        <result property="closeReconCapacityDistance" column="close_recon_capacity_distance"/>
+        <result property="photoelectricReconCapacityLevel" column="photoelectric_recon_capacity_level"/>
+        <result property="photoelectricReconCapacityDistance" column="photoelectric_recon_capacity_distance"/>
+        <result property="groundReconCapacityLevel" column="ground_recon_capacity_level"/>
+        <result property="groundReconCapacityDistance" column="ground_recon_capacity_distance"/>
+        <result property="weapon1AttackValue" column="weapon1_attack_value"/>
+        <result property="weapon1AttackDistance" column="weapon1_attack_distance"/>
+        <result property="weapon2AttackValue" column="weapon2_attack_value"/>
+        <result property="weapon2AttackDistance" column="weapon2_attack_distance"/>
+        <result property="antiAirAttackValue" column="anti_air_attack_value"/>
+        <result property="antiAirAttackDistance" column="anti_air_attack_distance"/>
+        <result property="communicationCapabilityLevel" column="communication_capability_level"/>
+        <result property="commandControlCapabilityLevel" column="command_control_capability_level"/>
+        <result property="disturbValue" column="disturb_value"/>
+        <result property="disturbDistance" column="disturb_distance"/>
+    </resultMap>
+
+
+</mapper>

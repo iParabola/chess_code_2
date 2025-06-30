@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.ruoyi.business.mapper.BizScenarioRecordChessPiecesMapper">
+    <select id="queryByScenarioRecordIdAndChessPiecesNumber"
+            resultType="com.ruoyi.business.domain.BizScenarioRecordChessPieces">
+        SELECT * FROM biz_scenario_record_chess_pieces WHERE scenario_record_id = #{scenarioRecordId} AND chess_pieces_number = #{chessPiecesNumber}
+    </select>
+
+    <select id="queryByScenarioRecordId"
+            resultType="com.ruoyi.business.domain.BizScenarioRecordChessPieces">
+        SELECT * FROM biz_scenario_record_chess_pieces WHERE scenario_record_id = #{scenarioRecordId}
+    </select>
+</mapper>

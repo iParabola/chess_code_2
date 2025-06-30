@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordDetailMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordDetail" id="BizVerdictRecordDetailResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="selfChessPiecesNumber" column="self_chess_pieces_number"/>
+        <result property="selfChessPiecesName" column="self_chess_pieces_name"/>
+        <result property="selfChessPiecesTypeId" column="self_chess_pieces_type_id"/>
+        <result property="selfChessPiecesTypeName" column="self_chess_pieces_type_name"/>
+        <result property="selfCoordinate" column="self_coordinate"/>
+        <result property="selfStatus" column="self_status"/>
+        <result property="targetChessPiecesNumber" column="target_chess_pieces_number"/>
+        <result property="targetChessPiecesName" column="target_chess_pieces_name"/>
+        <result property="targetChessPiecesTypeId" column="target_chess_pieces_type_id"/>
+        <result property="targetChessPiecesTypeName" column="target_chess_pieces_type_name"/>
+        <result property="targetCoordinate" column="target_coordinate"/>
+        <result property="targetStatus" column="target_status"/>
+        <result property="diceAmount" column="dice_amount"/>
+        <result property="isVisible" column="is_visible"/>
+        <result property="diceValue" column="dice_value"/>
+        <result property="attackLevel" column="attack_level"/>
+        <result property="verdictResult" column="verdict_result"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="selfOffset" column="self_offset"/>
+        <result property="targetOffset" column="target_offset"/>
+    </resultMap>
+
+
+</mapper>

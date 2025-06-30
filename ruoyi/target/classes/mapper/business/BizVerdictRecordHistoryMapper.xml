@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizVerdictRecordHistoryMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizVerdictRecordHistory" id="BizVerdictRecordHistoryResult">
+        <result property="id" column="id"/>
+        <result property="verdictRecordId" column="verdict_record_id"/>
+        <result property="userId" column="user_id"/>
+        <result property="campId" column="camp_id"/>
+        <result property="roundId" column="round_id"/>
+        <result property="chessPiecesNumber" column="chess_pieces_number"/>
+        <result property="selfCoordinate" column="self_coordinate"/>
+        <result property="targetCoordinate" column="target_coordinate"/>
+        <result property="actionMode" column="action_mode"/>
+        <result property="isEndRound" column="is_end_round"/>
+        <result property="chessRound" column="chess_round"/>
+        <result property="roundPeriod" column="round_period"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="status" column="status"/>
+        <result property="actionDesc" column="action_desc"/>
+        <result property="chessPiecesInfo" column="chess_pieces_info"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="attackResult" column="attack_result"/>
+        <result property="attackScore" column="attack_score"/>
+        <result property="targetChessPiecesNumber" column="target_chess_pieces_number"/>
+        <result property="selfOffset" column="self_offset"/>
+        <result property="targetOffset" column="target_offset"/>
+        <result property="actionInfoArray" column="action_info_array"/>
+        <result property="moveInfo" column="move_info"/>
+    </resultMap>
+    <delete id="deleteByRecord">
+        DELETE FROM biz_verdict_record_history
+        <where>
+            <if test="bizVerdictRecordHistory.verdictRecordId != null">
+                AND verdict_record_id = #{bizVerdictRecordHistory.verdictRecordId}
+            </if>
+            <if test="bizVerdictRecordHistory.userId != null">
+                AND user_id = #{bizVerdictRecordHistory.userId}
+            </if>
+            <if test="bizVerdictRecordHistory.roundId != null">
+                AND round_id = #{bizVerdictRecordHistory.roundId}
+            </if>
+            <if test="bizVerdictRecordHistory.chessPiecesNumber != null">
+                AND chess_pieces_number = #{bizVerdictRecordHistory.chessPiecesNumber}
+            </if>
+            <if test="bizVerdictRecordHistory.chessRound != null">
+                AND chess_round = #{bizVerdictRecordHistory.chessRound}
+            </if>
+            <if test="bizVerdictRecordHistory.campId != null">
+                AND camp_id = #{bizVerdictRecordHistory.campId}
+            </if>
+        </where>
+    </delete>
+
+    <select id="selectChessPieceByVerdictRecordId">
+        SELECT * FROM biz_verdict_record_history
+        <where>
+            <if test="bizVerdictRecordHistory.verdictRecordId != null">
+                AND verdict_record_id = #{bizVerdictRecordHistory.verdictRecordId}
+            </if>
+            <if test="bizVerdictRecordHistory.roundPeriod != null">
+                AND round_period = #{bizVerdictRecordHistory.roundPeriod}
+            </if>
+            <if test="bizVerdictRecordHistory.campId != null">
+                AND camp_id = #{bizVerdictRecordHistory.campId}
+            </if>
+            <if test="bizVerdictRecordHistory.chessRound != null">
+                AND chess_round = #{bizVerdictRecordHistory.chessRound}
+            </if>
+        </where>
+    </select>
+
+    <select id="selectByChessRoundAndVerdictRecordId">
+        SELECT * FROM biz_verdict_record_history
+        <where>
+            <if test="bizVerdictRecordHistory.verdictRecordId != null">
+                AND verdict_record_id = #{bizVerdictRecordHistory.verdictRecordId}
+            </if>
+            <if test="bizVerdictRecordHistory.chessRound != null">
+                AND chess_round = #{bizVerdictRecordHistory.chessRound}
+            </if>
+        </where>
+    </select>
+</mapper>

@@ -1,0 +1,1 @@
+{"doc":" 间瞄打击效果业务对象 biz_indirect_blow_effect\n\n @author ruoyi\n @date 2024-02-20\n","fields":[{"name":"attackScore","doc":" 攻击分数\n"},{"name":"diceScore","doc":" 骰子分数\n"},{"name":"blowEffect","doc":" 打击效果\n"},{"name":"remark","doc":" 备注\n"},{"name":"ext","doc":" 扩展字段\n"}],"enumConstants":[],"methods":[],"constructors":[]}

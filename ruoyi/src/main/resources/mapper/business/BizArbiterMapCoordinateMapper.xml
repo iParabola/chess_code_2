@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizArbiterMapCoordinateMapper">
+    <resultMap type="com.ruoyi.business.domain.BizArbiterMapCoordinate" id="BizArbiterMapCoordinateResult">
+        <result property="id" column="id"/>
+        <result property="arbiterMapId" column="arbiter_map_id"/>
+        <result property="arbiterMapName" column="arbiter_map_name"/>
+        <result property="coordinate" column="coordinate"/>
+        <result property="abscissa" column="abscissa"/>
+        <result property="ordinate" column="ordinate"/>
+        <result property="elevation" column="elevation"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="elevationColor" column="elevation_color"/>
+        <result property="terrainId" column="terrain_id"/>
+        <result property="terrainColor" column="terrain_color"/>
+        <result property="terrainCover" column="terrain_cover"/>
+        <result property="terrainActionValue" column="terrain_action_value"/>
+        <result property="terrainVisibleRange" column="terrain_visible_range"/>
+        <result property="centerCoordinate" column="center_coordinate"/>
+        <result property="pointsCoordinate" column="points_coordinate"/>
+        <result property="offset" column="offset"/>
+        <result property="roadTypeId" column="road_type_id"/>
+        <result property="roadName" column="road_name"/>
+        <result property="toRoadNumber" column="to_road_number"/>
+        <result property="roadWidth" column="roadWidth"/>
+        <result property="roadColor" column="road_color"/>
+    </resultMap>
+
+    <resultMap type="com.ruoyi.business.domain.vo.BizArbiterMapCoordinateVo"
+               id="BizArbiterMapCoordinateResultCollection">
+        <result property="id" column="id"/>
+        <result property="arbiterMapId" column="arbiter_map_id"/>
+        <result property="arbiterMapName" column="arbiter_map_name"/>
+        <result property="coordinate" column="coordinate"/>
+        <result property="abscissa" column="abscissa"/>
+        <result property="ordinate" column="ordinate"/>
+        <result property="elevation" column="elevation"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="elevationColor" column="elevation_color"/>
+        <result property="terrainId" column="terrain_id"/>
+        <result property="terrainColor" column="terrain_color"/>
+        <result property="terrainCover" column="terrain_cover"/>
+        <result property="terrainName" column="terrain_name"/>
+        <result property="terrainActionValue" column="terrain_action_value"/>
+        <result property="terrainVisibleRange" column="terrain_visible_range"/>
+        <result property="centerCoordinate" column="center_coordinate"/>
+        <result property="pointsCoordinate" column="points_coordinate"/>
+        <result property="offset" column="offset"/>
+        <result property="roadTypeId" column="road_type_id"/>
+        <result property="roadName" column="road_name"/>
+        <result property="toRoadNumber" column="to_road_number"/>
+        <result property="roadWidth" column="roadWidth"/>
+        <result property="roadColor" column="road_color"/>
+        <!--        <collection property="roadVoList" column="toRoadNumber" select="getRoadList">-->
+        <!--        </collection>-->
+        <collection notNullColumn="to_road_offset" property="roadVoList" ofType="com.ruoyi.business.domain.dto.RoadVo"
+                    javaType="java.util.ArrayList">
+            <result property="fromOffset" column="offset"></result>
+            <result property="toOffset" column="to_road_offset"></result>
+            <result property="roadColor" column="road_color"></result>
+            <result property="roadName" column="road_name"></result>
+            <result property="roadWidth" column="road_width"></result>
+            <result property="roadTypeName" column="road_type_name"></result>
+            <result property="terrainActionValue" column="terrain_action_value"></result>
+        </collection>
+    </resultMap>
+
+    <select id="getRoadList" parameterType="string" resultType="com.ruoyi.business.domain.dto.RoadVo">
+
+        select mc.offset               as toOffset
+             , mc.coordinate           as toCoordinate
+             , mc1.road_name
+             , mr.color                as roadColor
+             , mr.road_width           as roadWidth
+             , mc1.offset              as fromOffset
+             , mc1.coordinate          as fromCoordinate
+             , mr.name                 as roadTypeName
+             , mr.terrain_action_value as terrainActionValue
+        from biz_arbiter_map_coordinate mc
+                 left join biz_arbiter_map_coordinate mc1 on mc1.to_road_number = mc.coordinate
+                 left join biz_arbiter_map_road mr on mr.id = mc1.road_type_id
+        where find_in_set(mc.coordinate, (#{toRoadNumber}))
+    </select>
+
+
+    <select id="getMapCoordinate" resultMap="BizArbiterMapCoordinateResultCollection" parameterType="long">
+        select mc.coordinate,
+               mc.offset,
+               mc.elevation,
+               mc.elevation_color,
+               mc.bridge_flag,
+               mc.to_road_number,
+               ml.color      terrain_color,
+               ml.cover      terrain_cover,
+               ml.name       terrain_name,
+               mc.terrain_action_value,
+               mc.terrain_visible_range,
+               mc.to_road_offset,
+               mc.road_name  road_name,
+               mr.name       road_type_name,
+               mr.road_width road_width,
+               mr.color      road_color
+        from biz_arbiter_map_coordinate mc
+                 left join biz_arbiter_map_legend ml on ml.id = mc.terrain_id
+                 left join biz_arbiter_map_road mr on mr.id = mc.road_type_id
+        where mc.arbiter_map_id = #{arbiterMapId}
+--         group by mc.offset
+    </select>
+</mapper>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.business.mapper.BizScenarioMapper">
+
+    <resultMap type="com.ruoyi.business.domain.BizScenario" id="BizScenarioResult">
+        <result property="id" column="id"/>
+        <result property="scenarioNumber" column="scenario_number"/>
+        <result property="scenarioName" column="scenario_name"/>
+        <result property="scenarioContent" column="scenario_content"/>
+        <result property="arbiterMapId" column="arbiter_map_id"/>
+        <result property="arbiterMapName" column="arbiter_map_name"/>
+        <result property="remark" column="remark"/>
+        <result property="ext" column="ext"/>
+        <result property="productId" column="product_id"/>
+        <result property="productName" column="product_name"/>
+        <result property="chessRoundLimit" column="chess_round_limit"/>
+        <result property="stageConfig" column="stage_config"/>
+        <result property="cover" column="cover"/>
+        <result property="delFlag" column="del_flag"/>
+        <result property="createTime" column="create_time"/>
+        <result property="createBy" column="create_by"/>
+        <result property="updateTime" column="update_time"/>
+        <result property="updateBy" column="update_by"/>
+    </resultMap>
+
+
+</mapper>
