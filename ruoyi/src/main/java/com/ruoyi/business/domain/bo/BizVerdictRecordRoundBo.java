@@ -59,4 +59,6 @@ public class BizVerdictRecordRoundBo extends BaseEntity {
 
     private String coverUrl;
 
+
+    private String textIns;
 }

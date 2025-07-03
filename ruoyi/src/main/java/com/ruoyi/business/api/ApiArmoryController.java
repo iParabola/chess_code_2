@@ -859,4 +859,16 @@ public class ApiArmoryController extends BaseController {
         verdictRecordChessPiecesService.updateByBo(tmp);
         return R.ok();
     }
+
+    /**
+     * 保存文本指令
+     *
+     * @param bo 包含roundId和textIns的对象
+     * @return 成功返回success
+     */
+    @PostMapping("/saveTextInstruction")
+    public R<Void> saveTextInstruction(@RequestBody BizVerdictRecordRoundBo bo) {
+        return toAjax(verdictRecordRoundService.saveTextInstruction(bo));
+    }
+
 }

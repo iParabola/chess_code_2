@@ -63,4 +63,6 @@ public interface IBizVerdictRecordRoundService {
 
 
     List<BizVerdictRecordRoundVo> getHistoryTreeByRound(BizVerdictRecordRoundBo bo);
+
+    Boolean saveTextInstruction(BizVerdictRecordRoundBo bo);
 }

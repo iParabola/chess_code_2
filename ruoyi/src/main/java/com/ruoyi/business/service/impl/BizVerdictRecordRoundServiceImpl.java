@@ -6,6 +6,7 @@ import com.ruoyi.common.core.domain.PageQuery;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
 import com.baomidou.mybatisplus.core.toolkit.Wrappers;
+import com.ruoyi.common.exception.ServiceException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 import com.ruoyi.business.domain.bo.BizVerdictRecordRoundBo;
@@ -169,4 +170,21 @@ public class BizVerdictRecordRoundServiceImpl implements IBizVerdictRecordRoundS
         baseMapper.updateById(recordRound);
         return "success";
     }
+
+    @Override
+    public Boolean saveTextInstruction(BizVerdictRecordRoundBo bo) {
+        LambdaQueryWrapper<BizVerdictRecordRound> lqw = Wrappers.lambdaQuery();
+        lqw.eq(bo.getVerdictRecordId() != null, BizVerdictRecordRound::getVerdictRecordId, bo.getVerdictRecordId());
+        lqw.eq(bo.getChessRound() != null, BizVerdictRecordRound::getChessRound, bo.getChessRound());
+        lqw.eq(bo.getRoundPeriod() != null, BizVerdictRecordRound::getRoundPeriod, bo.getRoundPeriod());
+        lqw.eq(bo.getCampId() != null, BizVerdictRecordRound::getCampId, bo.getCampId());
+        lqw.last("limit 1");
+        BizVerdictRecordRound recordRound = baseMapper.selectOne(lqw);
+        recordRound.setTextIns(bo.getTextIns());
+        return baseMapper.updateById(recordRound)>0;
+    }
+
+
+
+
 }

@@ -69,6 +69,8 @@ public class BizVerdictRecordRoundVo implements Serializable {
 
     private String delFlag;
 
+    private String textIns;
+
     private List<BizVerdictRecordHistoryVo> historyVoList;
 
 
