@@ -135,11 +135,11 @@ public class BizVerdictRecordBo extends BaseEntity {
 
     private Long campId;
 
-    private Long firstJudgeUserId;
-    private Long secondJudgeUserId;
+//    private Long firstJudgeUserId;
+//    private Long secondJudgeUserId;
     private Long productId;
 
-    private Long firstCommanderUserId;
-    private Long secondCommanderUserId;
+//    private Long firstCommanderUserId;
+//    private Long secondCommanderUserId;
 
 }

@@ -1400,8 +1400,8 @@ public class BizVerdictRecordHistoryServiceImpl implements IBizVerdictRecordHist
         BeanUtils.copyProperties(verdictRecord, vo);
         vo.setFirstUserId(verdictRecord.getFirstUserId());
         vo.setFirstUserName(userMapper.selectVoById(verdictRecord.getFirstUserId()).getUserName());
-        vo.setFirstJudgeUserName(userMapper.selectVoById(verdictRecord.getFirstJudgeUserId()).getUserName());
-        vo.setFirstCommanderUserName(userMapper.selectVoById(verdictRecord.getFirstCommanderUserId()).getUserName());
+//        vo.setFirstJudgeUserName(userMapper.selectVoById(verdictRecord.getFirstJudgeUserId()).getUserName());
+//        vo.setFirstCommanderUserName(userMapper.selectVoById(verdictRecord.getFirstCommanderUserId()).getUserName());
         vo.setFirstCampId(verdictRecord.getFirstCampId());
         vo.setFirstCampName(chessPiecesCampMapper.selectVoById(verdictRecord.getFirstCampId()).getName());
         vo.setSecondUserId(verdictRecord.getSecondUserId());

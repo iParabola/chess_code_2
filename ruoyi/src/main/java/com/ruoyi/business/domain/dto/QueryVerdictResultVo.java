@@ -10,18 +10,18 @@ public class QueryVerdictResultVo extends BizVerdictRecordVo {
 
     private String firstCampName;
 
-    private String firstJudgeUserName;
-
-    private String firstCommanderUserName;
-
-    private String secondCommanderUserName;
+//    private String firstJudgeUserName;
+//
+//    private String firstCommanderUserName;
+//
+//    private String secondCommanderUserName;
 
 
     private Long secondCampId;
 
     private String secondCampName;
 
-    private String  secondJudgeUserName;
+//    private String  secondJudgeUserName;
 
     private ChessRoundActionEffectVo settlement;
 

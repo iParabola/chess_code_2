@@ -8,14 +8,14 @@
         <result property="id" column="id"/>
         <result property="inviterUserId" column="inviter_user_id"/>
         <result property="firstUserId" column="first_user_id"/>
-        <result property="firstCommanderUserId" column="first_commander_user_id"/>
+<!--        <result property="firstCommanderUserId" column="first_commander_user_id"/>-->
         <result property="firstCampId" column="first_camp_id"/>
         <result property="secondUserId" column="second_user_id"/>
-        <result property="secondCommanderUserId" column="second_commander_user_id"/>
+<!--        <result property="secondCommanderUserId" column="second_commander_user_id"/>-->
         <result property="secondCampId" column="second_camp_id"/>
         <result property="scenarioId" column="scenario_id"/>
-        <result property="secondJudgeUserId" column="second_judge_user_id"/>
-        <result property="firstJudgeUserId" column="first_judge_user_id"/>
+<!--        <result property="secondJudgeUserId" column="second_judge_user_id"/>-->
+<!--        <result property="firstJudgeUserId" column="first_judge_user_id"/>-->
         <result property="chessPiecesIds" column="chess_pieces_ids"/>
         <result property="inviteCode" column="invite_code"/>
         <result property="remark" column="remark"/>
@@ -38,19 +38,19 @@
                inviter_user_id                                                                as inviterUserId,
                (select user_name from biz_user u where bvr.inviter_user_id = u.id)            as inviterUserName,
                bvr.first_user_id                                                              as firstUserId,
-               bvr.first_commander_user_id                                                    as firstCommanderUserId,
-               bvr.first_judge_user_id                                                        as firstJudgeUserId,
+--                bvr.first_commander_user_id                                                    as firstCommanderUserId,
+--                bvr.first_judge_user_id                                                        as firstJudgeUserId,
                (select user_name from biz_user u where bvr.first_user_id = u.id)              as firstUserName,
-               (select user_name from biz_user u where bvr.first_judge_user_id = u.id)        as firstJudgeUserName,
-               (select user_name from biz_user u where bvr.first_commander_user_id = u.id)    as firstCommanderUserName,
+--                (select user_name from biz_user u where bvr.first_judge_user_id = u.id)        as firstJudgeUserName,
+--                (select user_name from biz_user u where bvr.first_commander_user_id = u.id)    as firstCommanderUserName,
                bvr.first_camp_id                                                              as firstCampId,
                (select name from biz_chess_pieces_camp cpc where cpc.id = bvr.first_camp_id)  as firstCampName,
                bvr.second_user_id                                                             as secondUserId,
-               bvr.second_judge_user_id                                                       as secondJudgeUserId,
-               bvr.second_commander_user_id                                                   as secondCommanderUserId,
+--                bvr.second_judge_user_id                                                       as secondJudgeUserId,
+--                bvr.second_commander_user_id                                                   as secondCommanderUserId,
                (select user_name from biz_user u where bvr.second_user_id = u.id)             as secondUserName,
-               (select user_name from biz_user u where bvr.second_judge_user_id = u.id)       as secondJudgeUserName,
-               (select user_name from biz_user u where bvr.second_commander_user_id = u.id)   as secondCommanderUserName,
+--                (select user_name from biz_user u where bvr.second_judge_user_id = u.id)       as secondJudgeUserName,
+--                (select user_name from biz_user u where bvr.second_commander_user_id = u.id)   as secondCommanderUserName,
                bvr.second_camp_id                                                             as secondCampId,
                (select name from biz_chess_pieces_camp cpc where cpc.id = bvr.second_camp_id) as secondCampName,
                bvr.scenario_id                                                                as scenarioId,

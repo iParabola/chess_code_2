@@ -42,11 +42,13 @@ public class BizVerdictRecord extends BaseEntity {
     /**
      * 甲方指挥员id
      */
-    private Long firstCommanderUserId;
+
+//    private Long firstCommanderUserId;
     /**
      * 乙方指挥员id
      */
-    private Long secondCommanderUserId;
+
+//    private Long secondCommanderUserId;
     /**
      * 甲方最终得分
      */
@@ -113,6 +115,6 @@ public class BizVerdictRecord extends BaseEntity {
     @TableLogic
     private String delFlag;
 
-    private Long firstJudgeUserId;
-    private Long secondJudgeUserId;
+//    private Long firstJudgeUserId;
+//    private Long secondJudgeUserId;
 }

@@ -22,16 +22,16 @@ public class QueryVerdictRecordDetail {
     private String firstUserName;
 
     //@ApiModelProperty(value = "甲方裁决用户id")
-    private String firstJudgeUserId;
+//    private String firstJudgeUserId;
 
     //@ApiModelProperty(value = "甲方指挥用户id")
-    private String firstCommanderUserId;
+//    private String firstCommanderUserId;
 
     //@ApiModelProperty(value = "甲方指挥用户名")
-    private String firstCommanderUserName;
+//    private String firstCommanderUserName;
 
     //@ApiModelProperty(value = "甲方裁决用户姓名")
-    private String firstJudgeUserName;
+//    private String firstJudgeUserName;
 
     //@ApiModelProperty(value = "甲方棋子阵营id")
     private String firstCampId;
@@ -46,16 +46,16 @@ public class QueryVerdictRecordDetail {
     private String secondUserName;
 
     //@ApiModelProperty(value = "乙方裁决用户id")
-    private String secondJudgeUserId;
+//    private String secondJudgeUserId;
 
     //@ApiModelProperty(value = "乙方裁决用户姓名")
-    private String secondJudgeUserName;
+//    private String secondJudgeUserName;
 
     //@ApiModelProperty(value = "乙方指挥用户id")
-    private String secondCommanderUserId;
+//    private String secondCommanderUserId;
 
     //@ApiModelProperty(value = "乙方指挥用户名")
-    private String secondCommanderUserName;
+//    private String secondCommanderUserName;
 
     //@ApiModelProperty(value = "乙方棋子阵营id")
     private String secondCampId;

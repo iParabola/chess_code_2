@@ -51,11 +51,11 @@ public class BizVerdictRecordVo implements Serializable {
     /**
      * 甲方指挥员id
      */
-    private Long firstCommanderUserId;
+//    private Long firstCommanderUserId;
     /**
      * 乙方指挥员id
      */
-    private Long secondCommanderUserId;
+//    private Long secondCommanderUserId;
     /**
      * 乙方用户id
      */
@@ -140,8 +140,8 @@ public class BizVerdictRecordVo implements Serializable {
     private String firstUserName;
 
     private String secondUserName;
-    private Long firstJudgeUserId;
-    private Long secondJudgeUserId;
+//    private Long firstJudgeUserId;
+//    private Long secondJudgeUserId;
 
 
 }

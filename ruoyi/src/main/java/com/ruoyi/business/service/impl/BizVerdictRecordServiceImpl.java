@@ -349,79 +349,84 @@ public class BizVerdictRecordServiceImpl implements IBizVerdictRecordService {
         }
         Long userId = LoginHelper.getLoginUser().getUserId();
         if (ObjectUtil.isNotNull(verdictRecord.getFirstUserId()) && userId.equals(verdictRecord.getFirstUserId()) ||
-            ObjectUtil.isNotNull(verdictRecord.getFirstJudgeUserId()) && userId.equals(verdictRecord.getFirstJudgeUserId()) ||
-            ObjectUtil.isNotNull(verdictRecord.getSecondUserId()) && userId.equals(verdictRecord.getSecondUserId()) ||
-            ObjectUtil.isNotNull(verdictRecord.getSecondJudgeUserId()) && userId.equals(verdictRecord.getSecondJudgeUserId()) ||
-            ObjectUtil.isNotNull(verdictRecord.getFirstCommanderUserId()) && userId.equals(verdictRecord.getFirstCommanderUserId()) ||
-            ObjectUtil.isNotNull(verdictRecord.getSecondCommanderUserId()) && userId.equals(verdictRecord.getSecondCommanderUserId())
+            ObjectUtil.isNotNull(verdictRecord.getSecondUserId()) && userId.equals(verdictRecord.getSecondUserId())
+            // 注释掉指挥员和裁决员相关判断
+            // ObjectUtil.isNotNull(verdictRecord.getFirstJudgeUserId()) && userId.equals(verdictRecord.getFirstJudgeUserId()) ||
+            // ObjectUtil.isNotNull(verdictRecord.getSecondJudgeUserId()) && userId.equals(verdictRecord.getSecondJudgeUserId()) ||
+            // ObjectUtil.isNotNull(verdictRecord.getFirstCommanderUserId()) && userId.equals(verdictRecord.getFirstCommanderUserId()) ||
+            // ObjectUtil.isNotNull(verdictRecord.getSecondCommanderUserId()) && userId.equals(verdictRecord.getSecondCommanderUserId())
         ) {
             throw new ServiceException("您已选择了阵营，无法再次选择");
         }
         if (ObjectUtil.isNull(verdictRecord.getFirstCampId())) {
-            if (chooseCampDto.getUserType() == 1) {
-                verdictRecord.setFirstUserId(userId);
-            } else if(chooseCampDto.getUserType() == 2) {
-                verdictRecord.setFirstJudgeUserId(userId);
-            } else {
-                verdictRecord.setFirstCommanderUserId(userId);
-            }
+            // 只保留操作员角色，删除指挥员和裁决员判断
+            // if (chooseCampDto.getUserType() == 1) {
+            verdictRecord.setFirstUserId(userId);
+            // } else if(chooseCampDto.getUserType() == 2) {
+            //     verdictRecord.setFirstJudgeUserId(userId);
+            // } else {
+            //     verdictRecord.setFirstCommanderUserId(userId);
+            // }
             verdictRecord.setFirstCampId(chooseCampDto.getId());
         } else {
             if (chooseCampDto.getId().equals(verdictRecord.getFirstCampId())) {
-                if (chooseCampDto.getUserType() == 1) {
-                    if (ObjectUtil.isNotNull(verdictRecord.getFirstUserId())) {
-                        throw new ServiceException("该阵营控制员已被选择");
-                    } else {
-                        verdictRecord.setFirstUserId(userId);
-                    }
-                } else if (chooseCampDto.getUserType() == 2)
-                {
-                    if (ObjectUtil.isNotNull(verdictRecord.getFirstJudgeUserId())) {
-                        throw new ServiceException("该阵营裁决员已被选择");
-                    } else {
-                        verdictRecord.setFirstJudgeUserId(userId);
-                    }
+                // 只保留操作员角色判断
+                // if (chooseCampDto.getUserType() == 1) {
+                if (ObjectUtil.isNotNull(verdictRecord.getFirstUserId())) {
+                    throw new ServiceException("该阵营控制员已被选择");
+                } else {
+                    verdictRecord.setFirstUserId(userId);
                 }
-                else {
-                    if (ObjectUtil.isNotNull(verdictRecord.getFirstCommanderUserId())) {
-                        throw new ServiceException("该阵营指挥员已被选择");
-                    } else {
-                        verdictRecord.setFirstCommanderUserId(userId);
-                    }
-                }
+                // } else if (chooseCampDto.getUserType() == 2)
+                // {
+                //     if (ObjectUtil.isNotNull(verdictRecord.getFirstJudgeUserId())) {
+                //         throw new ServiceException("该阵营裁决员已被选择");
+                //     } else {
+                //         verdictRecord.setFirstJudgeUserId(userId);
+                //     }
+                // }
+                // else {
+                //     if (ObjectUtil.isNotNull(verdictRecord.getFirstCommanderUserId())) {
+                //         throw new ServiceException("该阵营指挥员已被选择");
+                //     } else {
+                //         verdictRecord.setFirstCommanderUserId(userId);
+                //     }
+                // }
             } else {
                 if (ObjectUtil.isNull(verdictRecord.getSecondCampId())) {
-                    if (chooseCampDto.getUserType() == 1) {
-                        verdictRecord.setSecondUserId(userId);
-                    } else if(chooseCampDto.getUserType() == 2) {
-                        verdictRecord.setSecondJudgeUserId(userId);
-                    } else
-                    {
-                        verdictRecord.setSecondCommanderUserId(userId);
-                    }
+                    // 只保留操作员角色判断
+                    // if (chooseCampDto.getUserType() == 1) {
+                    verdictRecord.setSecondUserId(userId);
+                    // } else if(chooseCampDto.getUserType() == 2) {
+                    //     verdictRecord.setSecondJudgeUserId(userId);
+                    // } else
+                    // {
+                    //     verdictRecord.setSecondCommanderUserId(userId);
+                    // }
                     verdictRecord.setSecondCampId(chooseCampDto.getId());
                 } else {
                     if (chooseCampDto.getId().equals(verdictRecord.getSecondCampId())) {
-                        if (chooseCampDto.getUserType() == 1) {
-                            if (ObjectUtil.isNotNull(verdictRecord.getSecondUserId())) {
-                                throw new ServiceException("该阵营控制员已被选择");
-                            } else {
-                                verdictRecord.setSecondUserId(userId);
-                            }
-                        } else if(chooseCampDto.getUserType() == 2) {
-                            if (ObjectUtil.isNotNull(verdictRecord.getSecondJudgeUserId())) {
-                                throw new ServiceException("该阵营裁决员已被选择");
-                            } else {
-                                verdictRecord.setSecondJudgeUserId(userId);
-                            }
+                        // 只保留操作员角色判断
+                        // if (chooseCampDto.getUserType() == 1) {
+                        if (ObjectUtil.isNotNull(verdictRecord.getSecondUserId())) {
+                            throw new ServiceException("该阵营控制员已被选择");
+                        } else {
+                            verdictRecord.setSecondUserId(userId);
                         }
-                        else {
-                            if (ObjectUtil.isNotNull(verdictRecord.getSecondCommanderUserId())) {
-                                throw new ServiceException("该阵营指挥员已被选择");
-                            } else {
-                                verdictRecord.setSecondCommanderUserId(userId);
-                            }
-                        }
+                        // } else if(chooseCampDto.getUserType() == 2) {
+                        //     if (ObjectUtil.isNotNull(verdictRecord.getSecondJudgeUserId())) {
+                        //         throw new ServiceException("该阵营裁决员已被选择");
+                        //     } else {
+                        //         verdictRecord.setSecondJudgeUserId(userId);
+                        //     }
+                        // }
+                        // else {
+                        //     if (ObjectUtil.isNotNull(verdictRecord.getSecondCommanderUserId())) {
+                        //         throw new ServiceException("该阵营指挥员已被选择");
+                        //     } else {
+                        //         verdictRecord.setSecondCommanderUserId(userId);
+                        //     }
+                        // }
                     } else {
                         throw new ServiceException("阵营已被选择");
                     }
@@ -429,58 +434,6 @@ public class BizVerdictRecordServiceImpl implements IBizVerdictRecordService {
             }
 
         }
-//        if(chooseCampDto.getUserType() == 1){
-//            //对阵控制员
-//            if (ObjectUtil.isNull(verdictRecord.getFirstUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getSecondCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//                verdictRecord.setFirstUserId(userId);
-//                verdictRecord.setFirstCampId(chooseCampDto.getId());
-//            } else if (userId.equals(verdictRecord.getFirstUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getSecondCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//            } else if (ObjectUtil.isNull(verdictRecord.getSecondUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getFirstCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//                verdictRecord.setSecondUserId(userId);
-//                verdictRecord.setSecondCampId(chooseCampDto.getId());
-//            } else if (userId.equals(verdictRecord.getSecondCampId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getFirstCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//            } else {
-//                throw new ServiceException("加入房间的控制员已满");
-//            }
-//        }else{
-//            if (ObjectUtil.isNull(verdictRecord.getFirstJudgeUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getSecondCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//                verdictRecord.setFirstUserId(userId);
-//                verdictRecord.setFirstCampId(chooseCampDto.getId());
-//            } else if (userId.equals(verdictRecord.getFirstUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getSecondCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//            } else if (ObjectUtil.isNull(verdictRecord.getSecondUserId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getFirstCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//                verdictRecord.setSecondUserId(userId);
-//                verdictRecord.setSecondCampId(chooseCampDto.getId());
-//            } else if (userId.equals(verdictRecord.getSecondCampId())) {
-//                if (chooseCampDto.getId().equals(verdictRecord.getFirstCampId())) {
-//                    throw new ServiceException("该阵营控制员已被选择");
-//                }
-//            } else {
-//                throw new ServiceException("加入房间的控制员已满");
-//            }
-//        }
-//
-
 
         baseMapper.updateById(BeanUtil.toBean(verdictRecord, BizVerdictRecord.class));
         // 保存到redis
@@ -717,7 +670,6 @@ public class BizVerdictRecordServiceImpl implements IBizVerdictRecordService {
                 throw new ServiceException("观战的房间不允许观战");
             }
 
-
             return String.valueOf(bizVerdictRecordVo.getId());
         }
 
@@ -728,13 +680,15 @@ public class BizVerdictRecordServiceImpl implements IBizVerdictRecordService {
         LoginUser loginUser = LoginHelper.getLoginUser();
         Long userId = loginUser.getUserId();
         boolean firstFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getFirstUserId());
-        boolean firstJudgeFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getFirstJudgeUserId());
+        // 注释掉指挥员和裁决员相关变量
+        // boolean firstJudgeFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getFirstJudgeUserId());
         boolean secondFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getSecondUserId());
-        boolean secondJudgeFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getSecondJudgeUserId());
-        boolean firstCommanderFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getFirstCommanderUserId());
-        boolean secondCommanderFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getSecondCommanderUserId());
+        // boolean secondJudgeFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getSecondJudgeUserId());
+        // boolean firstCommanderFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getFirstCommanderUserId());
+        // boolean secondCommanderFlag = ObjectUtil.isNotNull(bizVerdictRecordVo.getSecondCommanderUserId());
 
-        if (firstFlag && secondFlag && firstJudgeFlag && secondJudgeFlag && firstCommanderFlag && secondCommanderFlag && !userId.equals(bizVerdictRecordVo.getFirstUserId()) && !userId.equals(bizVerdictRecordVo.getSecondUserId()) && !userId.equals(bizVerdictRecordVo.getFirstJudgeUserId()) && !userId.equals(bizVerdictRecordVo.getSecondJudgeUserId()) && !userId.equals(bizVerdictRecordVo.getFirstCommanderUserId()) && !userId.equals(bizVerdictRecordVo.getSecondCommanderUserId())) {
+        // 只保留操作员身份判断
+        if (firstFlag && secondFlag && !userId.equals(bizVerdictRecordVo.getFirstUserId()) && !userId.equals(bizVerdictRecordVo.getSecondUserId())) {
             throw new ServiceException("加入的房间已满");
         }
         return String.valueOf(bizVerdictRecordVo.getId());
@@ -781,11 +735,12 @@ public class BizVerdictRecordServiceImpl implements IBizVerdictRecordService {
         Map<String, Long> userMap = new HashMap<>();
         userMap.put("inviterUserId", bizVerdictRecordVO.getInviterUserId());
         userMap.put("firstUserId", bizVerdictRecordVO.getFirstUserId());
-        userMap.put("firstCommanderUserId", bizVerdictRecordVO.getFirstCommanderUserId());
-        userMap.put("firstJudgeUserId", bizVerdictRecordVO.getFirstJudgeUserId());
+        // 注释掉指挥员和裁决员相关缓存
+        // userMap.put("firstCommanderUserId", bizVerdictRecordVO.getFirstCommanderUserId());
+        // userMap.put("firstJudgeUserId", bizVerdictRecordVO.getFirstJudgeUserId());
         userMap.put("secondUserId", bizVerdictRecordVO.getSecondUserId());
-        userMap.put("secondJudgeUserId", bizVerdictRecordVO.getSecondJudgeUserId());
-        userMap.put("secondCommanderUserId", bizVerdictRecordVO.getSecondCommanderUserId());
+        // userMap.put("secondJudgeUserId", bizVerdictRecordVO.getSecondJudgeUserId());
+        // userMap.put("secondCommanderUserId", bizVerdictRecordVO.getSecondCommanderUserId());
         roomDto.setRoomUserMap(userMap);
         RedisUtils.setCacheObject(ROOM_KEY + verdictRecordId, roomDto, Duration.ofSeconds(86400));
     }
