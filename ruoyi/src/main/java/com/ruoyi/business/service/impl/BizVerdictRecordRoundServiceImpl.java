@@ -164,10 +164,15 @@ public class BizVerdictRecordRoundServiceImpl implements IBizVerdictRecordRoundS
         lqw.eq(bo.getVerdictRecordId() != null, BizVerdictRecordRound::getVerdictRecordId, bo.getVerdictRecordId());
         lqw.eq(bo.getChessRound() != null, BizVerdictRecordRound::getChessRound, bo.getChessRound());
         lqw.eq(bo.getRoundPeriod() != null, BizVerdictRecordRound::getRoundPeriod, bo.getRoundPeriod());
-        lqw.eq(bo.getCampId() != null, BizVerdictRecordRound::getCampId, bo.getCampId());
-        BizVerdictRecordRound recordRound = baseMapper.selectOne(lqw);
-        recordRound.setStatus(2);
-        baseMapper.updateById(recordRound);
+
+        List<BizVerdictRecordRound> recordRounds = baseMapper.selectList(lqw);
+
+        System.out.println(recordRounds);
+        for (BizVerdictRecordRound recordRound : recordRounds) {
+            recordRound.setStatus(2);
+            baseMapper.updateById(recordRound);
+        }
+
         return "success";
     }
 

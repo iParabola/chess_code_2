@@ -40,16 +40,6 @@ public class BizVerdictRecord extends BaseEntity {
      */
     private Long firstCampId;
     /**
-     * 甲方指挥员id
-     */
-
-//    private Long firstCommanderUserId;
-    /**
-     * 乙方指挥员id
-     */
-
-//    private Long secondCommanderUserId;
-    /**
      * 甲方最终得分
      */
     private Long firstScore;
