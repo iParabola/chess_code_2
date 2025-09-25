@@ -8392,3 +8392,32 @@ java.util.concurrent.RejectedExecutionException: XNIO007007: Thread is terminati
 2025-09-25 22:42:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
 2025-09-25 22:42:50 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
 2025-09-25 22:42:50 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
+2025-09-25 22:46:14 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.5.Final
+2025-09-25 22:46:14 [main] INFO  com.ruoyi.RuoYiApplication - Starting RuoYiApplication using Java 1.8.0_391 on DESKTOP-EOVB4T8 with PID 20808 (E:\code\gitcode\chess_code_2\ruoyi\target\classes started by 33104 in E:\code\gitcode\chess_code_2)
+2025-09-25 22:46:14 [main] INFO  com.ruoyi.RuoYiApplication - The following 1 profile is active: "dev"
+2025-09-25 22:46:16 [main] INFO  io.undertow.servlet - Initializing Spring embedded WebApplicationContext
+2025-09-25 22:46:16 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource detect P6SPY plugin and enabled it
+2025-09-25 22:46:16 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Starting...
+2025-09-25 22:46:17 [main] INFO  com.zaxxer.hikari.HikariDataSource - master - Start completed.
+2025-09-25 22:46:17 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource - add a datasource named [master] success
+2025-09-25 22:46:17 [main] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource initial loaded [1] datasource,primary datasource named [master]
+2025-09-25 22:46:19 [main] INFO  c.r.framework.config.JacksonConfig - 初始化 jackson 配置
+2025-09-25 22:46:20 [main] INFO  c.ruoyi.framework.config.RedisConfig - 初始化 redis 配置
+2025-09-25 22:46:20 [main] INFO  org.redisson.Version - Redisson 3.20.1
+2025-09-25 22:46:20 [redisson-netty-2-6] INFO  o.r.c.p.MasterPubSubConnectionPool - 1 connections initialized for 192.10.84.130/192.10.84.130:6381
+2025-09-25 22:46:20 [redisson-netty-2-3] INFO  o.r.c.pool.MasterConnectionPool - 8 connections initialized for 192.10.84.130/192.10.84.130:6381
+2025-09-25 22:46:22 [main] INFO  io.undertow - starting server: Undertow - 2.2.28.Final
+2025-09-25 22:46:22 [main] INFO  org.xnio - XNIO version 3.8.7.Final
+2025-09-25 22:46:22 [main] INFO  org.xnio.nio - XNIO NIO Implementation Version 3.8.7.Final
+2025-09-25 22:46:22 [main] INFO  org.jboss.threads - JBoss Threads version 3.1.0.Final
+2025-09-25 22:46:22 [main] INFO  com.ruoyi.RuoYiApplication - Started RuoYiApplication in 8.283 seconds (JVM running for 9.401)
+2025-09-25 22:46:22 [main] INFO  c.r.c.w.l.WebSocketTopicListener - 初始化WebSocket主题订阅监听器成功
+2025-09-25 22:46:22 [main] INFO  c.r.s.runner.SystemApplicationRunner - 初始化OSS配置成功
+2025-09-25 22:46:22 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载参数缓存数据成功
+2025-09-25 22:46:22 [main] INFO  c.r.s.runner.SystemApplicationRunner - 加载字典缓存数据成功
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  io.undertow - stopping server: Undertow - 2.2.28.Final
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  c.r.f.manager.ShutdownManager - ====关闭后台任务任务线程池====
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource start closing ....
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown initiated...
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - master - Shutdown completed.
+2025-09-25 22:46:24 [SpringApplicationShutdownHook] INFO  c.b.d.d.DynamicRoutingDataSource - dynamic-datasource all closed success,bye
