@@ -290,7 +290,7 @@ public class BizVerdictRecordHistoryServiceImpl implements IBizVerdictRecordHist
             //数据库中增加记录使导演可以打分 设置蓝军
             BizVerdictRecordHistory history1 = new BizVerdictRecordHistory();
             history1.setUserId(dto.getUserId());
-            history1.setCampId(1689661085015457793L);
+            history1.setCampId(1689661085015457792L);
             history1.setVerdictRecordId(dto.getVerdictRecordId());
             history1.setChessRound(0L);
             history1.setRoundPeriod(0);
@@ -303,7 +303,7 @@ public class BizVerdictRecordHistoryServiceImpl implements IBizVerdictRecordHist
 
             BizVerdictRecordHistory history2 = new BizVerdictRecordHistory();
             history2.setUserId(dto.getUserId());
-            history2.setCampId(1689661085015457792L);
+            history2.setCampId(1689661085015457793L);
             history2.setVerdictRecordId(dto.getVerdictRecordId());
             history2.setChessRound(0L);
             history2.setRoundPeriod(0);

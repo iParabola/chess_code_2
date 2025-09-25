@@ -11,7 +11,8 @@
       "name": "ruoyi.cache-lazy",
       "type": "java.lang.Boolean",
       "description": "缓存懒加载",
-      "sourceType": "com.ruoyi.common.config.RuoYiConfig"
+      "sourceType": "com.ruoyi.common.config.RuoYiConfig",
+      "defaultValue": false
     },
     {
       "name": "ruoyi.copyright-year",
