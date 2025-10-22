@@ -48,7 +48,7 @@ public class BizArbiterMapRoadBo extends BaseEntity {
     /**
      * 贴图
      */
-    @NotBlank(message = "贴图不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "贴图不能为空", groups = { AddGroup.class, EditGroup.class })
     private String cover;
 
     /**
@@ -66,19 +66,19 @@ public class BizArbiterMapRoadBo extends BaseEntity {
     /**
      * 中心点坐标
      */
-    @NotBlank(message = "中心点坐标不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "中心点坐标不能为空", groups = { AddGroup.class, EditGroup.class })
     private String centersCoordinat;
 
     /**
      * 备注
      */
-    @NotBlank(message = "备注不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "备注不能为空", groups = { AddGroup.class, EditGroup.class })
     private String remark;
 
     /**
      * 扩展字段
      */
-    @NotBlank(message = "扩展字段不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "扩展字段不能为空", groups = { AddGroup.class, EditGroup.class })
     private String ext;
     private Integer roadWidth;
 

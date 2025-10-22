@@ -31,7 +31,7 @@ public class BizArbiterMapLegendBo extends BaseEntity {
     /**
      * map表id
      */
-    @NotNull(message = "map表id不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotNull(message = "map表id不能为空", groups = { AddGroup.class, EditGroup.class })
     private Long mapId;
 
     /**
@@ -67,13 +67,13 @@ public class BizArbiterMapLegendBo extends BaseEntity {
     /**
      * 备注
      */
-    @NotBlank(message = "备注不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "备注不能为空", groups = { AddGroup.class, EditGroup.class })
     private String remark;
 
     /**
      * 扩展字段
      */
-    @NotBlank(message = "扩展字段不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotBlank(message = "扩展字段不能为空", groups = { AddGroup.class, EditGroup.class })
     private String ext;
 
 
