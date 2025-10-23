@@ -10,6 +10,7 @@ import com.ruoyi.business.domain.BizArbiterMap;
 import com.ruoyi.business.domain.BizArbiterMapCoordinate;
 import com.ruoyi.business.domain.bo.BizArbiterMapBo;
 import com.ruoyi.business.domain.bo.BizArbiterMapCoordinateBo;
+import com.ruoyi.business.domain.dto.ArbiterMapIdAndName;
 import com.ruoyi.business.domain.dto.BatchSaveArbiterMapCoordinateDto;
 import com.ruoyi.business.domain.vo.BizArbiterMapCoordinateVo;
 import com.ruoyi.business.domain.vo.BizArbiterMapVo;
@@ -264,5 +265,9 @@ public class BizArbiterMapServiceImpl implements IBizArbiterMapService {
             dto.setMapName(map.getMapName());
             return dto;
         }).collect(Collectors.toList());
+    }
+
+    public  List<ArbiterMapIdAndName> queryArbiterMapInforList(){
+        return baseMapper.selectArbiterMapInforList();
     }
 }

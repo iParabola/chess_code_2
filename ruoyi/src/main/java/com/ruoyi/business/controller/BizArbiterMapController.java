@@ -4,6 +4,8 @@ import java.util.List;
 import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
+import cn.dev33.satoken.annotation.SaIgnore;
+import com.ruoyi.business.domain.dto.ArbiterMapIdAndName;
 import com.ruoyi.business.domain.dto.BatchSaveArbiterMapCoordinateDto;
 import lombok.RequiredArgsConstructor;
 import javax.servlet.http.HttpServletResponse;
@@ -54,6 +56,13 @@ public class BizArbiterMapController extends BaseController {
     public List<BizArbiterMapVo> queryArbiterMapList(BizArbiterMapBo bo) {
         return iBizArbiterMapService.queryList(bo);
     }
+
+    @SaIgnore
+    @GetMapping("/queryArbiterMapInforList")
+    public List<ArbiterMapIdAndName> queryArbiterMapInforList() {
+        return iBizArbiterMapService.queryArbiterMapInforList();
+    }
+
     /**
      * 导出地图管理列表
      */
@@ -123,4 +132,5 @@ public class BizArbiterMapController extends BaseController {
     public R<String> batchSaveArbiterMapCoordinate( @RequestBody BatchSaveArbiterMapCoordinateDto batchSaveArbiterMapCoordinateDto) {
         return R.ok(iBizArbiterMapService.batchSaveArbiterMapCoordinate(batchSaveArbiterMapCoordinateDto));
     }
+
 }
