@@ -31,7 +31,7 @@ public class BizArbiterMapLegendBo extends BaseEntity {
     /**
      * map表id
      */
-//    @NotNull(message = "map表id不能为空", groups = { AddGroup.class, EditGroup.class })
+    @NotNull(message = "map表id不能为空", groups = { AddGroup.class, EditGroup.class })
     private Long mapId;
 
     /**
@@ -55,13 +55,13 @@ public class BizArbiterMapLegendBo extends BaseEntity {
     /**
      * 地形影响行动值(+影响值，河流行动值+1，则行动值-（1+1），公里-0.5，则行动值-（1+ -0.5）)
      */
-    @NotNull(message = "地形影响行动值(+影响值，河流行动值+1，则行动值-（1+1），公里-0.5，则行动值-（1+ -0.5）)不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotNull(message = "地形影响行动值(+影响值，河流行动值+1，则行动值-（1+1），公里-0.5，则行动值-（1+ -0.5）)不能为空", groups = { AddGroup.class, EditGroup.class })
     private BigDecimal terrainActionValue;
 
     /**
      * 地形影响视野范围(乘系数)
      */
-    @NotNull(message = "地形影响视野范围(乘系数)不能为空", groups = { AddGroup.class, EditGroup.class })
+//    @NotNull(message = "地形影响视野范围(乘系数)不能为空", groups = { AddGroup.class, EditGroup.class })
     private BigDecimal terrainVisibleRange;
 
     /**
