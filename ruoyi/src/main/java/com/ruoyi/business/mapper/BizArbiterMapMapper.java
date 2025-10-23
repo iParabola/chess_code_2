@@ -4,6 +4,8 @@ import com.ruoyi.business.domain.BizArbiterMap;
 import com.ruoyi.business.domain.vo.BizArbiterMapVo;
 import com.ruoyi.common.core.mapper.BaseMapperPlus;
 
+import java.util.List;
+
 /**
  * 地图管理Mapper接口
  *
@@ -12,4 +14,5 @@ import com.ruoyi.common.core.mapper.BaseMapperPlus;
  */
 public interface BizArbiterMapMapper extends BaseMapperPlus<BizArbiterMapMapper, BizArbiterMap, BizArbiterMapVo> {
 
+    List<BizArbiterMapVo> selectArbiterMapInforList();
 }

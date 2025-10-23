@@ -60,4 +60,6 @@ public interface IBizArbiterMapService {
     Map<String, BizArbiterMapCoordinateVo> getCoordinateMap(Long mapId);
 
     List<BizArbiterMapVo> queryMapByProductId(Long productId);
+
+    List<BizArbiterMapVo> queryArbiterMapInforList();
 }

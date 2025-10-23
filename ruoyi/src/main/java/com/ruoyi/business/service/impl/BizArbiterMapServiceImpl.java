@@ -265,4 +265,8 @@ public class BizArbiterMapServiceImpl implements IBizArbiterMapService {
             return dto;
         }).collect(Collectors.toList());
     }
+
+    public  List<BizArbiterMapVo> queryArbiterMapInforList(){
+        return baseMapper.selectArbiterMapInforList();
+    }
 }

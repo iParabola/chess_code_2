@@ -28,6 +28,9 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         <result property="mapTop" column="map_top"/>
         <result property="mapLeft" column="map_left"/>
     </resultMap>
+    <select id="selectArbiterMapInforList" >
+        select id,map_name from biz_arbiter_map where del_flag = 0
+    </select>
 
 
 </mapper>
