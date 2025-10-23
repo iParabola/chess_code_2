@@ -6,6 +6,7 @@ import com.ruoyi.business.domain.vo.BizArbiterMapVo;
 import com.ruoyi.business.domain.bo.BizArbiterMapBo;
 import com.ruoyi.common.core.page.TableDataInfo;
 import com.ruoyi.common.core.domain.PageQuery;
+import com.ruoyi.business.domain.dto.ArbiterMapIdAndName;
 
 import javax.servlet.http.HttpServletResponse;
 import java.util.Collection;
@@ -61,5 +62,5 @@ public interface IBizArbiterMapService {
 
     List<BizArbiterMapVo> queryMapByProductId(Long productId);
 
-    List<BizArbiterMapVo> queryArbiterMapInforList();
+    List<ArbiterMapIdAndName> queryArbiterMapInforList();
 }

@@ -1,6 +1,7 @@
 package com.ruoyi.business.mapper;
 
 import com.ruoyi.business.domain.BizArbiterMap;
+import com.ruoyi.business.domain.dto.ArbiterMapIdAndName;
 import com.ruoyi.business.domain.vo.BizArbiterMapVo;
 import com.ruoyi.common.core.mapper.BaseMapperPlus;
 
@@ -14,5 +15,5 @@ import java.util.List;
  */
 public interface BizArbiterMapMapper extends BaseMapperPlus<BizArbiterMapMapper, BizArbiterMap, BizArbiterMapVo> {
 
-    List<BizArbiterMapVo> selectArbiterMapInforList();
+    List<ArbiterMapIdAndName> selectArbiterMapInforList();
 }

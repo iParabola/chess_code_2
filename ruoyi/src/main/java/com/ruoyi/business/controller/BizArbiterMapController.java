@@ -5,6 +5,7 @@ import java.util.Arrays;
 import java.util.concurrent.TimeUnit;
 
 import cn.dev33.satoken.annotation.SaIgnore;
+import com.ruoyi.business.domain.dto.ArbiterMapIdAndName;
 import com.ruoyi.business.domain.dto.BatchSaveArbiterMapCoordinateDto;
 import lombok.RequiredArgsConstructor;
 import javax.servlet.http.HttpServletResponse;
@@ -58,7 +59,7 @@ public class BizArbiterMapController extends BaseController {
 
     @SaIgnore
     @GetMapping("/queryArbiterMapInforList")
-    public List<BizArbiterMapVo> queryArbiterMapInforList() {
+    public List<ArbiterMapIdAndName> queryArbiterMapInforList() {
         return iBizArbiterMapService.queryArbiterMapInforList();
     }
 
