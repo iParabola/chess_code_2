@@ -10,6 +10,7 @@ import com.ruoyi.business.domain.BizArbiterMapLegend;
 import com.ruoyi.business.domain.BizArbiterMapRoad;
 import com.ruoyi.business.domain.BizVerdictRecordHistory;
 import com.ruoyi.business.domain.bo.BizArbiterMapCoordinateBo;
+import com.ruoyi.business.domain.dto.ArbiterMapEditInfo;
 import com.ruoyi.business.domain.dto.MapImportDto;
 import com.ruoyi.business.domain.vo.BizArbiterMapCoordinateVo;
 import com.ruoyi.business.domain.vo.BizArbiterMapLegendVo;
@@ -17,6 +18,7 @@ import com.ruoyi.business.domain.vo.BizArbiterMapRoadVo;
 import com.ruoyi.business.mapper.BizArbiterMapCoordinateMapper;
 import com.ruoyi.business.mapper.BizArbiterMapLegendMapper;
 import com.ruoyi.business.mapper.BizArbiterMapRoadMapper;
+import com.ruoyi.business.mapper.BizVerdictRecordHistoryMapper;
 import com.ruoyi.business.service.IBizArbiterMapCoordinateService;
 import com.ruoyi.common.core.domain.PageQuery;
 import com.ruoyi.common.core.page.TableDataInfo;
@@ -49,6 +51,7 @@ public class BizArbiterMapCoordinateServiceImpl implements IBizArbiterMapCoordin
 
     private final BizArbiterMapRoadMapper roadMapper;
 
+    private final BizArbiterMapCoordinateMapper bizArbiterMapCoordinateMapper;
     /**
      * 查询地图坐标
      */
@@ -219,5 +222,11 @@ public class BizArbiterMapCoordinateServiceImpl implements IBizArbiterMapCoordin
             return "#8B0000";
         }
         return "";
+    }
+
+    @Override
+    public String updateMapTerrain(ArbiterMapEditInfo arbiterMapEditInfo) {
+        bizArbiterMapCoordinateMapper.updateMapTerrain(arbiterMapEditInfo);
+        return "success";
     }
 }

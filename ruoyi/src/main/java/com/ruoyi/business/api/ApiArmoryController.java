@@ -12,16 +12,12 @@ import com.ruoyi.common.core.controller.BaseController;
 import com.ruoyi.common.core.domain.PageQuery;
 import com.ruoyi.common.core.domain.R;
 import com.ruoyi.common.core.page.TableDataInfo;
-import com.ruoyi.common.exception.ServiceException;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletResponse;
-import java.net.InetAddress;
-import java.net.UnknownHostException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
@@ -67,6 +63,7 @@ public class ApiArmoryController extends BaseController {
 
     private final IBizArbiterMapService arbiterMapService;
 
+    private final IBizArbiterMapCoordinateService bizArbiterMapCoordinateService;
     /**
      * 兵棋库
      *
@@ -869,6 +866,26 @@ public class ApiArmoryController extends BaseController {
     @PostMapping("/saveTextInstruction")
     public R<Void> saveTextInstruction(@RequestBody BizVerdictRecordRoundBo bo) {
         return toAjax(verdictRecordRoundService.saveTextInstruction(bo));
+    }
+
+    @PostMapping("/updateMapTerrain")
+    public R<String> updateMapTerrain(@RequestBody Map<String, Object> requestData) {
+        String arbiterMapId = (String) requestData.get("arbiterMapId");
+        String offset = (String) requestData.get("coordinate");
+        String terrainType = (String) requestData.get("terrainType");
+        ArbiterMapEditInfo arbiterMapEditInfo = new ArbiterMapEditInfo();
+        arbiterMapEditInfo.setArbiterMapId(Long.valueOf(arbiterMapId));
+        arbiterMapEditInfo.setOffset(offset);
+        arbiterMapEditInfo.setTerrainCover(terrainType);
+        String type = terrainType == null ? "" : terrainType.trim().toLowerCase();
+        if ("wood".equals(type)) {
+            arbiterMapEditInfo.setTerrainId(1869678871299805186L);
+        } else if ("city".equals(type)) {
+            arbiterMapEditInfo.setTerrainId(1869678924508745729L);
+        } else {
+            arbiterMapEditInfo.setTerrainId(0L);
+        }
+        return R.ok(bizArbiterMapCoordinateService.updateMapTerrain(arbiterMapEditInfo));
     }
 
 }

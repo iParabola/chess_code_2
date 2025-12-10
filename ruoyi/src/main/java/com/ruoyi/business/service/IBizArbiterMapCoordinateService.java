@@ -1,6 +1,7 @@
 package com.ruoyi.business.service;
 
 import com.ruoyi.business.domain.BizArbiterMapCoordinate;
+import com.ruoyi.business.domain.dto.ArbiterMapEditInfo;
 import com.ruoyi.business.domain.dto.MapImportDto;
 import com.ruoyi.business.domain.vo.BizArbiterMapCoordinateVo;
 import com.ruoyi.business.domain.bo.BizArbiterMapCoordinateBo;
@@ -17,6 +18,8 @@ import java.util.List;
  * @date 2024-02-20
  */
 public interface IBizArbiterMapCoordinateService {
+
+    String updateMapTerrain(ArbiterMapEditInfo arbiterMapEditInfo);
 
     /**
      * 查询地图坐标

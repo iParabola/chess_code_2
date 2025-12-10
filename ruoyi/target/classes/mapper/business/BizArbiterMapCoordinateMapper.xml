@@ -114,4 +114,14 @@
         where mc.arbiter_map_id = #{arbiterMapId}
 --         group by mc.offset
     </select>
+
+    <update id="updateMapTerrain" parameterType="com.ruoyi.business.domain.dto.ArbiterMapEditInfo">
+        update biz_arbiter_map_coordinate
+        <set>
+            <if test="terrainCover != null">terrain_cover = #{terrainCover,jdbcType=VARCHAR},</if>
+            <if test="terrainId != null">terrain_id = #{terrainId,jdbcType=BIGINT},</if>
+        </set>
+        where arbiter_map_id = #{arbiterMapId,jdbcType=BIGINT}
+          and `offset` = #{offset,jdbcType=VARCHAR}
+    </update>
 </mapper>

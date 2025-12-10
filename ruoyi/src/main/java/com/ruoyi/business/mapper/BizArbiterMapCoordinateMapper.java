@@ -1,6 +1,7 @@
 package com.ruoyi.business.mapper;
 
 import com.ruoyi.business.domain.BizArbiterMapCoordinate;
+import com.ruoyi.business.domain.dto.ArbiterMapEditInfo;
 import com.ruoyi.business.domain.vo.BizArbiterMapCoordinateVo;
 import com.ruoyi.common.core.mapper.BaseMapperPlus;
 
@@ -14,4 +15,6 @@ import java.util.List;
  */
 public interface BizArbiterMapCoordinateMapper extends BaseMapperPlus<BizArbiterMapCoordinateMapper, BizArbiterMapCoordinate, BizArbiterMapCoordinateVo> {
         List<BizArbiterMapCoordinateVo> getMapCoordinate(Long arbiterMapId);
+
+        void updateMapTerrain(ArbiterMapEditInfo arbiterMapEditInfo);
 }
